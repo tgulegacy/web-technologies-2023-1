@@ -1,0 +1,37 @@
+
+
+.Menu-button {
+    display: inline-block;
+    color: black;
+    padding: 10px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-color: black;
+    background-color: white;
+}
+
+.Main-menu {
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+h1, h2, h3, h4{
+    color: white;
+    background-color: black;
+}
+
+.h3-footer{
+    text-align: center;
+}
+
+div{
+    margin-top: 5px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
