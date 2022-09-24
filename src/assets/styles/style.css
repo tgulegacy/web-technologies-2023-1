@@ -1,0 +1,111 @@
+@import "./global.css";
+@import "./fonts.css";
+@import "./utils.css";
+
+.par{
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.h1-all{
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.h2-contacts{
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+.h3-all{
+    font-size: 36px;
+    text-align: center;
+}
+
+.h4-all{
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.input-class{
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.submit-class{
+    height: 35px;
+    width: 120px;
+    background: linear-gradient(to right, #4975E6, #8C55E8);
+    border-radius: 8px;
+    border: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.Menu{
+    padding: 0;
+}
+
+.Menu li{
+    display: inline;
+    font-size: 18px;
+}
+
+.Menu-item{
+    position: relative;
+    padding-left: 60px;
+}
+
+.Menu-item:first-child>a{
+    left: 0;
+    position: absolute;
+    padding-left: -100px;
+    z-index: 100;
+}
+
+ul.Menu button{
+    width: 140px;
+    height: 40px;
+    text-align: right;
+    font-size: 24px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 0 3px 0 0 ;
+    box-shadow: 0 0 10px 0 white;
+    background: linear-gradient(white, #529091);
+}
+
+/*ul.Menu input{
+    width: 140px;
+    height: 40px;
+    text-align: right;
+    font-size: 24px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 0 3px 0 0 ;
+    box-shadow: 0 0 10px 0 white;
+    background: linear-gradient(white, #529091);
+}*/
+
+header{
+    height: 40px;
+    background: linear-gradient(white, #529091);
+}
+
+*{
+    margin: 0;
+}
+
+div{
+    padding-top: 10px;
+}
