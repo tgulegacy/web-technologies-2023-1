@@ -1,0 +1,116 @@
+/* это стиль картинки */
+@font-face {
+    font-family: "Inter";
+    src: local('Inter'), local('Inter-Bold'), local('Inter Bold'),
+    url("./src/asserts/fonts/Inter-Bold.ttf") format("truetype");
+    /*url("./src/asserts/fonts/Inter-Bold.woff2") format("woff");*/
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local('Inter'), local('Inter-Medium'), local('Inter Medium'),
+    url("./src/asserts/fonts/Inter-Medium.ttf") format("truetype");
+    /*url("./static/fonts/Inter-Medium.woff2") format("woff");*/
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: local('Inter'), local('Inter-Regular'), local('Inter Regular'),
+    url("./src/asserts/fonts/Inter-Regular.ttf") format("truetype");
+    /*url("./static/fonts/Inter-Regular.woff2") format("woff");*/
+    font-weight: 400;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.my-img {
+    width: 100px;
+    height: 100px;
+}
+
+.my-img_width {
+    width: 300px;
+}
+
+#second-img {
+    width: 200px;
+    height: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+[show] {
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+
+img.show {
+    height: 400px;
+}
+
+.show {
+    display: flex;
+    width: 150px;
+    height: 150px;
+}
+
+.first-class,
+.second-class {
+    width: 500px !important;
+}
+
+.second-class {
+    height: 500px;
+    display: flex;
+    background-color: #85545482;
+    background-color: rgba(133, 84, 84, 0.51);
+    background-image: url("./kotik_d_850.webp");
+    background-position: center;
+    /* background-position-x: -864px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*background: #85545482 url("./kotik_d_850.webp") center fixed no-repeat;*/
+}
+
+.first-class {
+    /*border-color: #85545482;*/
+    /* border-style: solid; */
+    /* border-width: 10px 20px 30px; */
+    /* border: 1px solid #85545482; */
+    border-bottom: 10px solid #e56b6b;
+    border-top: 10px solid #e56b6b;
+    border-left: 10px solid #e56b6b;
+    border-right: 10px solid #e56b6b;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 100px;
+}
+
+.title-h1 {
+    color: #e56b6b;
+    font-family: "Inter", sans-serif, Verdana;
+    /*font-style: initial;*/
+    /*font-variant: small-caps;*/
+    /*font-weight: 600;*/
+    /*font-size: 15px;*/
+    /*line-height: 48px;*/
+    font: bold 24px Arial;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.list {
+    list-style-type: circle;
+    /*list-style-image: url("./kotik_d_850.webp");*/
+}
