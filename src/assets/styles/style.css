@@ -2,10 +2,120 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+
+/*header{*/
+/*    font-size:30px;*/
+/*    display: block;*/
+/*    border:1px solid black;*/
+/*    background: linear-gradient(0deg,#397D84,white);*/
+/*}*/
+
+
+/*header a:hover{*/
+/*    background: white;*/
+/*}*/
+
+ul.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    box-sizing: border-box;
+    width: fit-content;
+    background-image: linear-gradient(to top, #4776E6 0%, #ffffff  120%);
 }
 
-.test {
-    color: red !important;
+li.breadcrumbs-item{
+    background-image: linear-gradient(to top, #4776E6 0%, #ffffff  120%);
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    margin-right: 5px;
+    padding-right: 15px;
+    border-style: solid;
+    border-width: 0 3px 0 0;
+    border-color: transparent black transparent transparent;
+    border-radius: 20px;
+}
+
+li.breadcrumbs-item:hover{
+    background-image: linear-gradient(to top, #144fd9 0%, #ffffff  120%);
+}
+
+a.breadcrumbs-link {
+    color: #0b56ea;
+    text-decoration: none;
+}
+
+a.breadcrumbs-link:not(span):hover {
+    text-decoration: underline;
+}
+
+a.breadcrumbs-link.current {
+    color: #333;
+}
+
+body{
+    margin:0;
+    padding:0;
+}
+
+.paragraph{
+    font-size:16px;
+    line-height: 26px;
+    color:#1F3F68;
+}
+
+.header-1{
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+.header-2{
+    font-weight: 500;
+    font-size:44px;
+    text-align: center;
+}
+
+.header-3{
+    font-size:36px;
+    text-align:center;
+}
+
+.header-4{
+    font-size:20px;
+    line-height: 30px;
+    color: #1F3F68
+}
+
+.input-elements{
+    border:1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.btn-send{
+    background-color: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16,112,177,.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color:#FFF;
+    text-transform: uppercase;;
+}
+
+.btn-send:hover{
+    cursor: pointer;
+    background: linear-gradient(90deg,#4A75E7,#8F55E9);
+}
+
+
+.background{
+    background-image: url("../img/nyan-background.jpg");
+    padding:5px;
+    background-size: contain;
+    color:white;
 }
