@@ -61,7 +61,7 @@
     box-sizing: border-box;
     border: 1px solid #356EAD;
     border-radius: 10px;
-    opacity: 0.4;
+    /* opacity: 0.4; */
 }
 
 .submit-btn button {
