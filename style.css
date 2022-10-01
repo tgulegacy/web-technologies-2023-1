@@ -114,3 +114,169 @@ img.show {
     list-style-type: circle;
     /*list-style-image: url("./kotik_d_850.webp");*/
 }
+
+.div1,
+.div2 {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 25px;
+}
+
+.div1 {
+    background-color: rgba(255, 0, 0, 0.45);
+}
+
+.div2 {
+    background-color: rgba(0, 0, 255, 0.51);
+}
+
+.header {
+    background-color: rgba(0, 128, 0, 0.44);
+    width: calc(100% - 100px);
+    padding: 25px 50px;
+}
+
+.header__item {
+    background-color: rgba(128, 11, 0, 0.44);
+    width: 100px;
+    height: 50px;
+    transition: background-color 0.3s, color 0.5s;
+}
+
+.header__item:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.header__item:last-of-type:hover {
+    background-color: rgba(0, 0, 255, 0.51);
+}
+
+.header__item:nth-child(odd) {
+    background-color: rgb(69, 242, 1);
+}
+
+.header__item:nth-child(even) {
+    background-color: rgb(170, 40, 40);
+}
+
+.header__item:nth-child(3n + 1) {
+    background-color: rgb(1, 77, 242);
+}
+
+.header__item:nth-last-child() {
+
+}
+
+.header__item:first-child {
+
+}
+
+.header__item:last-child {
+
+}
+
+.header__item:only-child {
+
+}
+
+.header__item:empty {
+
+}
+
+.header__item:nth-of-type() {
+
+}
+
+.header__item:first-of-type {
+
+}
+
+.header__item:last-of-type {
+
+}
+
+a {
+    font-size: 40px;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: green;
+}
+
+a:focus {
+    color: blue;
+}
+
+a:active {
+    color: brown;
+}
+
+input:valid {
+
+}
+
+input:invalid {
+
+}
+
+input:enabled {
+
+}
+
+input:disabled {
+
+}
+
+input:in-range {
+
+}
+
+p:lang() {
+
+}
+
+input:checked {
+
+}
+
+li {
+    width: 50px;
+}
+
+li:first-letter {
+    font-size: 50px;
+    color: green;
+}
+
+li:first-line {
+    font-size: 40px;
+    color: red;
+}
+
+li:before {
+    content: 'new';
+    color: brown;
+}
+
+li:after {
+    content: 'new';
+    color: #8a2aa5;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
