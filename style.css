@@ -1,0 +1,260 @@
+@import "fonts.css";
+.Header{
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 24px;
+    gap: 80px;
+    position: absolute;
+    width: 1124px;
+    height: 56px;
+    left: 108px;
+    top: 24px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+}
+
+.main__logo{
+    width: 120px;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #2D66EE;
+    text-decoration: none
+}
+
+.menu li{
+    display: inline;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    width: 324px;
+    height: 18px;
+}
+
+.contacts li{
+    display: inline;
+}
+
+.phone__numbers li{
+    display: inline;
+}
+
+.phone__numbers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    width: 266px;
+    height: 24px;
+}
+
+.phone__icon{
+    width: 21px;
+    height: 21px;
+}
+
+.email__icon{
+    width: 19px;
+    height: 15px;
+}
+
+.email{
+    width: 142px;
+    height: 18px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #2D66EE;
+}
+
+.number{
+    display: inline;
+    width: 109px;
+    height: 18px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #2D66EE;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 32px;
+    width: 472px;
+    height: 24px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+
+    position: absolute;
+    width: 600px;
+    height: 220px;
+    left: 108px;
+    top: 160px;
+    margin-bottom: 0;
+}
+
+.description__big{
+    width: 600px;
+    height: 156px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 144%;
+    color: #101828;
+    margin-bottom: 0;
+}
+
+.description__small{
+    width: 600px;
+    height: 40px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.24px;
+    color: #101828;
+    margin-top: 0;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 32px;
+    position: absolute;
+    width: 676px;
+    height: 186px;
+    left: 108px;
+    top: 444px;
+    background: #FFFFFF;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 0 24px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+}
+
+.feedback__text{
+    width: 600px;
+    height: 48px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    color: #101828;
+}
+
+.consultation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+    width: 628px;
+    height: 58px;
+}
+
+.input__number__text,
+.input__name__text{
+    width: 224px;
+    height: 16px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #667085;
+    margin: 0;
+    padding: 0;
+}
+
+.input_number,
+.input__name{
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    width: 159px;
+    height: 22px;
+    margin: 0;
+}
+
+.consultation{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 24px;
+    width: 628px;
+    height: 58px;
+    flex-direction: row;
+}
+
+.name__block,
+.number__block{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 8px;
+    width: 224px;
+    height: 54px;
+}
+
+.button__consultation{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 24px;
+    gap: 8px;
+    width: 132px;
+    height: 58px;
+    background: #2D66EE;
+    border-radius: 8px;
+}
+
+.button__text__consultation{
+    width: 84px;
+    height: 36px;
+    font-family: 'SF Pro Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+body{
+    background-color: silver;
+}
