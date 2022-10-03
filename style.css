@@ -19,7 +19,6 @@
 .main__logo{
     width: 120px;
     height: 24px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -74,7 +73,6 @@
 .email{
     width: 142px;
     height: 18px;
-    font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -87,7 +85,6 @@
     display: inline;
     width: 109px;
     height: 18px;
-    font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -124,7 +121,6 @@
 .description__big{
     width: 600px;
     height: 156px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -136,7 +132,6 @@
 .description__small{
     width: 600px;
     height: 40px;
-    font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -166,7 +161,6 @@
 .feedback__text{
     width: 600px;
     height: 48px;
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -189,7 +183,6 @@
 .input__name__text{
     width: 224px;
     height: 16px;
-    font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -245,7 +238,6 @@
 .button__text__consultation{
     width: 84px;
     height: 36px;
-    font-family: 'SF Pro Text';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
