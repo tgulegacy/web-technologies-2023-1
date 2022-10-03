@@ -78,10 +78,11 @@ ul.Menu button{
     height: 40px;
     text-align: right;
     font-size: 24px;
+    border: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-width: 0 3px 0 0 ;
-    box-shadow: 0 0 10px 0 white;
+    border-width: 0 0 3px 0;
+    box-shadow: 0 0 10px 0 black;
     background: linear-gradient(white, #529091);
 }
 
@@ -109,3 +110,5 @@ header{
 div{
     padding-top: 10px;
 }
+
+
