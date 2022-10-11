@@ -10,3 +10,37 @@ html {
     margin: 0;
     padding: 0;
 }
+h1 {
+    font-size:36px;
+    font-weight: 700;
+}
+input[type]:not(input[type='submit']){
+    border: none;
+    border-bottom: 1.5px solid #2D66EE;
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    font-size: 17px;
+    color: #101828;
+
+}
+input[type = 'submit'] {
+    background: #2D66EE;
+    border-radius: 8px;
+    color: white;
+    font-family: "SF Pro Display";
+    font-weight: 500;
+    letter-spacing: -0.154px;
+    font-size: 14px;
+    padding: 11px 24px;
+    border: none;
+    cursor: pointer;
+}
+label {
+    font-family: 'SF Pro Display';
+    font-weight:500 ;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.078px;
+    color: #667085;
+    padding-bottom: 8px;
+}
