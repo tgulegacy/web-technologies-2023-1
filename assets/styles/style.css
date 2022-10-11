@@ -1,7 +1,10 @@
 @import "./global.css";
 @import "./fonts.css";
 @import "./utils.css";
-
+a{
+    text-decoration: none;
+    color: black;
+}
 .test {
     color: yellow !important;
 }
@@ -40,15 +43,59 @@ p{
     opacity: 0.4;
 }
 .submit{
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
+    background-image: linear-gradient(60deg, #4d72e5 10%, #6c63e7 50%, #8c53e8 100%);
+    color: #f7f4f4;
+    border-radius: 12px;
+    border-style: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contacts__form{
+    background-image: url('/web-technologies-2022-2/contacts-form-bg.jpg');
+}
+
+.bread {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bread li{
+    display: inline;
+    font-size: 18px;
+}
+
+.breadcrumb{
+    position: relative;
+    padding-left:0;
+}
+
+
+ul.bread a{
+    display: inline-block;
+    margin-top: auto;
+    padding: 0 0;
+    width: 120px;
+    height: 40px;
+    text-align: right;
+    font-size: 24px;
+    border: solid white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-width: 0 3px 0 0;
+    background: linear-gradient(white, #3f8385);
+    cursor: pointer;
+    box-shadow: 10px 0 10px -10px black;
+
+}
+
+
+header{
+    height: 40px;
+    background: linear-gradient(white, #3f8385);
 }
 
 
