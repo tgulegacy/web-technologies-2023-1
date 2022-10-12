@@ -42,11 +42,15 @@
 }
 
 .contacts li{
-    display: inline;
+    display: block;
+}
+
+.contacts li a{
+    text-decoration: none;
 }
 
 .phone__numbers li{
-    display: inline;
+    display: block;
 }
 
 .phone__numbers{
@@ -116,7 +120,7 @@
 }
 
 .description__big{
-    width: 600px;
+    width: 500px;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -126,10 +130,10 @@
 }
 
 .description__small{
-    width: 600px;
+    width: 500px;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.24px;
     color: #101828;
@@ -153,12 +157,11 @@
 }
 
 .feedback__text{
-    width: 600px;
-    font-style: normal;
+    width: 500px;
+    font-style: inherit;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 24px;
-    letter-spacing: 0.38px;
     color: #101828;
 }
 
@@ -223,6 +226,7 @@
     height: 58px;
     background: #2D66EE;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .button__text__consultation{
@@ -302,6 +306,10 @@ footer{
     line-height: 16px;
     letter-spacing: -0.078px;
     color: #FFFFFF;
+}
+
+.blue__text{
+    color: #2D66EE;
 }
 
 body{
