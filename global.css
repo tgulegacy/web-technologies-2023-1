@@ -1,7 +1,7 @@
 html {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     letter-spacing: -0.24px;
@@ -38,7 +38,7 @@ footer{
     justify-content: center;
     padding: 24px;
     gap: 40px;
-    width: 1224px;
+    width: 100%;
     left: 108px;
     background: #101828;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 2px 24px rgba(0, 0, 0, 0.08);
@@ -52,7 +52,7 @@ footer{
     justify-content: center;
     padding: 0px;
 
-    width: 1176px;
+    width: 100%;
     height: 54px;
 }
 
@@ -102,6 +102,10 @@ nav{
     border-radius: 12px;
 }
 
+.menu-icon{
+    display: none;
+}
+
 .nav-menu{
     display: flex;
     flex-direction: row;
@@ -113,7 +117,7 @@ nav{
     flex: none;
     order: 1;
     flex-grow: 0;
-    font-family: 'SF Pro Text';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -133,7 +137,7 @@ nav{
     flex: none;
     order: 2;
     flex-grow: 0;
-    font-family: 'SF Pro Text';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -238,5 +242,68 @@ input[type = 'submit'] {
 .gray-color{
     color: #98A2B3;
 }
+
+@media screen and (max-width: 768px) {
+    footer{
+        padding: 0;
+        justify-content: flex-start;
+        width:700px;
+    }
+    .footer{
+        margin:0;
+    }
+
+    .nav-contacts li:first-child{
+        display: none;
+    }
+    .nav-menu{
+        display:none
+    }
+    nav{
+        width: 700px;
+        left: 0;
+        justify-content: space-between;
+    }
+
+    .menu-icon{
+        display: inherit;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer{
+        padding: 0;
+        justify-content: flex-start;
+        width:400px;
+    }
+    .footer{
+        margin:0;
+    }
+    .footer-contacts{
+        display:grid;
+        grid-template-rows: repeat(2, 54px);
+        grid-template-columns: repeat(2, 200px);
+    }
+    #footer-p{
+        margin-top: 20px;
+    }
+
+    .nav-contacts {
+        display: none;
+    }
+    .nav-menu{
+        display:none
+    }
+    nav{
+        width: 400px;
+        left: 0;
+        justify-content: space-between;
+    }
+
+    .menu-icon{
+        display: inherit;
+    }
+}
+
 
 
