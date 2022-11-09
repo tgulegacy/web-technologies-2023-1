@@ -136,10 +136,7 @@ body {
     font-weight: 700;
 }
 
-.page-footer {
-    padding: 48px 108px;
 
-}
 
 .footer-content {
     background: #101828;
@@ -151,7 +148,9 @@ body {
     flex-direction: column;
     row-gap: 40px;
 }
-
+.footer-section {
+    padding: 48px 108px;
+}
 .page-footer__heading {
     color: white;
     text-align: center;
