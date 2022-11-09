@@ -1,0 +1,62 @@
+Index: .idea/workspace.xml
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -3,16 +3,7 @@
+   <component name="ChangeListManager">
+     <list default="true" id="5853870f-ee92-44a8-b355-644645fa7137" name="Changes" comment="finished work">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/assets/styles/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/fonts.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/assets/styles/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/global.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/assets/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/style.css" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/Inter/Inter-Bold.ttf" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/Inter/Inter-Bold.woff2" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/Inter/Inter-Medium.ttf" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/Inter/Inter-Medium.woff2" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/Inter/Inter-Regular.ttf" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/static/fonts/Inter-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/static/fonts/Inter/Inter-Regular.woff2" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -85,18 +76,18 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "list.type.of.created.stylesheet": "CSS",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "preferences.sourceCode.HTML",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="D:\Projectss\web-technologies-2022-2\src" />
+@@ -118,7 +109,8 @@
+       <workItem from="1665474689308" duration="2893000" />
+       <workItem from="1665505717861" duration="6912000" />
+       <workItem from="1665512969889" duration="1317000" />
+-      <workItem from="1665514801509" duration="8359000" />
++      <workItem from="1665514801509" duration="8915000" />
++      <workItem from="1667997289520" duration="7375000" />
+     </task>
+     <task id="LOCAL-00001" summary="create index.html and add some text">
+       <created>1663406116507</created>
