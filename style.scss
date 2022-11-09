@@ -1,5 +1,5 @@
 @import "fonts.css";
-.Header {
+.Header{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,19 +16,19 @@
   z-index: 100;
 }
 
-.email__small-screen {
+.email__small-screen{
   display: none;
 }
 
-.email-icon__small-screen {
+.email-icon__small-screen{
   display: none;
 }
 
-.button__menu {
+.button__menu{
   display: none;
 }
 
-.main__logo {
+.main__logo{
   width: 120px;
   height: 24px;
   font-style: normal;
@@ -37,15 +37,15 @@
   line-height: 18px;
   letter-spacing: -0.154px;
   color: #2D66EE;
-  text-decoration: none;
+  text-decoration: none
 }
 
-.menu li {
+.menu li{
   display: flex;
   text-decoration: none;
 }
 
-.menu {
+.menu{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -54,24 +54,24 @@
   padding: 18px;
 }
 
-.menu__item a {
+.menu__item a{
   text-decoration: none;
   color: #101828;
 }
 
-.contacts li {
+.contacts li{
   display: block;
 }
 
-.contacts li a {
+.contacts li a{
   text-decoration: none;
 }
 
-.phone__numbers li {
+.phone__numbers li{
   display: block;
 }
 
-.phone__numbers {
+.phone__numbers{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -81,17 +81,17 @@
   height: 24px;
 }
 
-.phone__icon {
+.phone__icon{
   width: 21px;
   height: 21px;
 }
 
-.email__icon {
+.email__icon{
   width: 19px;
   height: 15px;
 }
 
-.email {
+.email{
   width: 142px;
   height: 18px;
   font-style: normal;
@@ -102,7 +102,7 @@
   color: #2D66EE;
 }
 
-.number {
+.number{
   display: inline;
   width: 109px;
   height: 18px;
@@ -114,7 +114,7 @@
   color: #2D66EE;
 }
 
-.contacts {
+.contacts{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -124,19 +124,20 @@
   height: 24px;
 }
 
-.description {
+.description{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
   gap: 24px;
+
   position: relative;
   width: 600px;
   left: 108px;
   margin-bottom: 0;
 }
 
-.description__big {
+.description__big{
   width: 500px;
   font-style: normal;
   font-weight: 700;
@@ -146,7 +147,7 @@
   margin-bottom: 0;
 }
 
-.description__small {
+.description__small{
   width: 500px;
   font-style: normal;
   font-weight: 500;
@@ -157,7 +158,7 @@
   margin-top: 0;
 }
 
-.feedback {
+.feedback{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -173,7 +174,7 @@
   border-radius: 12px;
 }
 
-.feedback__text {
+.feedback__text{
   width: 500px;
   font-style: inherit;
   font-weight: 700;
@@ -182,7 +183,7 @@
   color: #101828;
 }
 
-.consultation {
+.consultation{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -192,7 +193,7 @@
 }
 
 .input__number__text,
-.input__name__text {
+.input__name__text{
   width: 224px;
   height: 16px;
   font-style: normal;
@@ -205,7 +206,7 @@
 }
 
 .input__number,
-.input__name {
+.input__name{
   align-items: flex-start;
   padding: 0;
   gap: 8px;
@@ -217,7 +218,7 @@
   border-bottom: 1px solid;
 }
 
-.consultation {
+.consultation{
   display: flex;
   align-items: center;
   padding: 0;
@@ -227,7 +228,7 @@
 }
 
 .name__block,
-.number__block {
+.number__block{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -236,7 +237,7 @@
   width: 224px;
 }
 
-.button__consultation {
+.button__consultation{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -249,7 +250,7 @@
   cursor: pointer;
 }
 
-.button__text__consultation {
+.button__text__consultation{
   width: 84px;
   height: 36px;
   font-style: normal;
@@ -261,7 +262,7 @@
   text-align: left;
 }
 
-.feedbackAndDescription {
+.feedbackAndDescription{
   display: flex;
   flex-direction: column;
   position: relative;
@@ -273,7 +274,7 @@
   background-position: right;
 }
 
-.development-cycle__block {
+.development-cycle__block{
   background: white;
   margin: 0;
   padding-left: 108px;
@@ -283,7 +284,7 @@
 
 .Webtech__head, .Mobiletech__head {
   width: 496px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -291,30 +292,30 @@
   color: #101828;
 }
 
-.Webtech__list li, .Mobiletech__list li {
+.Webtech__list li, .Mobiletech__list li{
   display: flex;
   text-decoration: none;
   color: #344054;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-size: 17px;
 }
 
-.Webtech__list li:after, .Mobiletech__list li:after {
-  content: "/";
+.Webtech__list li:after, .Mobiletech__list li:after{
+  content:"/";
   padding-left: 5px;
   padding-right: 5px;
   color: #2D66EE;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-size: 17px;
 }
 
-.Webtech__list li:last-child:after, .Mobiletech__list li:last-child:after {
-  content: "";
+.Webtech__list li:last-child:after, .Mobiletech__list li:last-child:after{
+  content:"";
 }
 
-.Webtech__list, .Mobiletech__list {
+.Webtech__list, .Mobiletech__list{
   display: flex;
   flex-direction: row;
   text-decoration: none;
@@ -323,63 +324,67 @@
   width: 496px;
 }
 
-.LinksTech__list {
+.LinksTech__list{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
+
   position: absolute;
   width: 233px;
   left: 836px;
   top: 980px;
 }
 
-.LinksTech__list li a {
+.LinksTech__list li a{
   text-decoration: none;
   color: #1D2939;
 }
 
-.LinksTech__list li a:visited, .LinksTech__list li a:focus {
+.LinksTech__list li a:visited, .LinksTech__list li a:focus{
   color: #1D2939;
 }
 
-.LinksTech__list li:hover {
+.LinksTech__list li:hover{
   text-decoration: none;
   color: #1D2939;
   border-bottom: #2D66EE 1px solid;
   font-weight: bold;
 }
 
-.LinksTech__list li {
+.LinksTech__list li{
   display: flex;
   text-decoration: none;
   margin-bottom: 12px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #1D2939;
+
 }
 
-.LinksTech__list li:after {
+.LinksTech__list li:after{
   content: url("/web-technologies-2022-2/Icon Color (2).svg");
   padding-left: 21px;
 }
 
-.Developed__projects-block {
+.Developed__projects-block{
   padding-left: 108px;
   padding-top: 80px;
   padding-bottom: 13px;
 }
 
-.Projects__list li {
+.Projects__list li{
   display: flex;
   align-items: center;
   padding: 0;
   gap: 16px;
+
   width: 391px;
-  font-family: "Inter";
+
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -387,7 +392,7 @@
   color: #101828;
 }
 
-.Projects__list {
+.Projects__list{
   padding-top: 15px;
   display: flex;
   flex-direction: row;
@@ -395,39 +400,43 @@
   text-decoration: none;
 }
 
-.projects-example__block {
+.projects-example__block{
   margin: 0;
   padding-left: 108px;
 }
 
-footer {
+footer{
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 24px;
   gap: 40px;
   margin: auto;
+
   width: 1224px;
   left: 108px;
   height: 222px;
+
   background: #101828;
+
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 24px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
 }
 
-.h1__footer {
+.h1__footer{
   color: #FFFFFF;
   size: 36px;
   line-height: 18px;
   margin: 0;
+
 }
 
-.footer__names li, .footer__info li {
+.footer__names li, .footer__info li{
   display: flex;
   width: 1224px;
 }
 
-.footer__names, .footer__info {
+.footer__names, .footer__info{
   display: flex;
   color: white;
   width: 1224px;
@@ -437,11 +446,11 @@ footer {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 24px rgba(0, 0, 0, 0.08);
 }
 
-.footer__names {
+.footer__names{
   color: #98A2B3;
 }
 
-.h2__footer {
+.h2__footer{
   padding-top: 10px;
   width: 160px;
   font-weight: 400;
@@ -451,30 +460,32 @@ footer {
   color: #FFFFFF;
 }
 
-.blue__text {
+.blue__text{
   color: #2D66EE;
 }
 
-body {
+body{
   background-color: #f2f4f7;
 }
 
-.footer__mobile {
+.footer__mobile{
   display: none;
 }
 
-@media screen and (max-width: 1400px) {
-  html {
+@media screen and (max-width: 1400px){
+  html{
     width: auto !important;
     margin: 0;
     padding: 0;
   }
-  body {
+
+  body{
     margin: 0;
     padding: 0;
     width: auto;
   }
-  .Header {
+
+  .Header{
     margin: 0;
     padding: 0;
     display: flex;
@@ -490,26 +501,31 @@ body {
     z-index: 100;
     justify-content: space-between;
   }
-  .footer {
+
+  .footer{
     width: auto;
   }
-  .button__menu {
+
+  .button__menu{
     display: flex;
     padding-left: 39px;
     text-decoration: none;
     border: none;
     background-color: white;
   }
-  .button__menu:hover {
+
+  .button__menu:hover{
     display: flex;
     padding-left: 39px;
     text-decoration: none;
     background-color: white;
   }
-  .menu {
+
+  .menu{
     display: none;
   }
-  .email__small-screen {
+
+  .email__small-screen{
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -520,156 +536,197 @@ body {
     text-decoration: none;
     padding-right: 25px;
   }
-  .email-icon__small-screen {
+
+  .email-icon__small-screen{
     display: flex;
     padding-right: 5px;
   }
-  .email__small-screen img {
+
+  .email__small-screen img{
     width: 19px;
     height: 18px;
   }
-  .email__small-screen a {
+
+  .email__small-screen a{
     text-decoration: none;
   }
-  .contacts {
+
+  .contacts{
     display: none;
   }
-  .main__logo {
+
+  .main__logo{
     display: flex;
     padding: 0;
     margin: 0;
   }
-  .feedback {
+
+
+  .feedback{
     width: 382px;
     height: 356px;
     justify-content: normal;
   }
-  .consultation {
+
+  .consultation{
     flex-direction: column;
     align-items: flex-start;
     width: 224px;
   }
-  .feedbackAndDescription {
+
+  .feedbackAndDescription{
     background-size: 600px;
     background-position-x: 530px;
   }
-  .button__consultation {
+
+  .button__consultation{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+
     width: 160px;
     height: 40px;
   }
-  .button__text__consultation {
+
+  .button__text__consultation{
     width: 110px;
   }
-  .feedback__text {
+
+  .feedback__text{
     width: 285px;
   }
-  .description__big {
+
+  .description__big{
     width: 410px;
   }
-  .description__small {
+
+  .description__small{
     width: 310px;
   }
-  .development-cycle__block {
+
+  .development-cycle__block{
     padding-top: 2px;
     width: auto;
     padding-left: 40px;
     height: 499px;
   }
-  .Webtech__list, .Mobiletech__list {
+
+  .Webtech__list, .Mobiletech__list{
     width: 320px;
   }
-  .LinksTech__list {
+
+  .LinksTech__list{
     left: 443px;
     right: 92px;
     padding-top: 222px;
     gap: 24px;
   }
-  .footer-main__block {
+
+  .LinksTech__list li{
+
+  }
+
+  .footer-main__block{
     width: auto;
   }
-  .footer__names, .footer__info {
+
+  .footer__names, .footer__info{
     width: 700px;
   }
-  .footer {
+
+  .footer{
     max-width: 768px;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .footer__mobile {
+
+  .footer__mobile{
     display: none;
   }
 }
-@media screen and (max-width: 426px) {
-  .email__small-screen {
+@media screen and (max-width: 426px){
+  .email__small-screen{
     display: none;
   }
-  .Header {
+
+  .Header{
     justify-content: normal;
     width: 100%;
   }
-  .description {
+
+  .description{
     left: 32px;
   }
-  .description__big {
+
+  .description__big{
     font-size: 28px;
     width: 380px;
   }
-  .feedback {
+
+  .feedback{
     width: 345px;
     left: 24px;
   }
-  .feedback__text {
+
+  .feedback__text{
     font-size: 16px;
   }
-  .LinksTech__list {
+
+  .LinksTech__list{
     position: unset;
     display: flex;
-    padding: 0;
+    padding: 0  ;
     padding-top: 32px;
   }
-  .development-cycle__block {
+
+  .development-cycle__block{
     padding-bottom: 344px;
   }
-  .Developed__projects-block {
+
+  .Developed__projects-block{
     padding-left: 18px;
     padding-top: 32px;
   }
-  .description__big-projects-blog {
+
+  .description__big-projects-blog{
     margin: 0;
     width: 350px;
     font-size: 28px;
+
   }
-  .Webtech__head, .Mobiletech__head {
+
+  .Webtech__head, .Mobiletech__head{
     width: 375px;
   }
-  .Projects__list li {
+  .Projects__list li{
     font-size: 14px;
     width: 200px;
     padding-top: 15px;
   }
-  .Projects__list li img {
+
+  .Projects__list li img{
     width: 44px;
     height: 44px;
   }
-  .projects-example__block {
+
+  .projects-example__block{
     padding-left: 18px;
   }
-  .footer__names, .footer__info {
+
+  .footer__names, .footer__info{
     width: 375px;
   }
-  .description {
+
+  .description{
     width: 380px;
   }
-  .footer {
+
+  .footer{
     display: none;
   }
-  .footer__mobile {
+
+  .footer__mobile{
     display: flex;
     width: auto;
   }
 }
-
-/*# sourceMappingURL=style.css.map */

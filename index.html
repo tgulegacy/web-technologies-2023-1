@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Урок 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="style.css">
 </head>
 <body>
     <div class = "Header">
+        <button class="button__menu"><img src="pictures/menu_img.png" alt=""></button>
         <a href="index.html" class = "main__logo">IT WEBSITE</a>
         <ul class="menu">
-            <li class="menu__item">Services</li>
-            <li class="menu__item">Media</li>
-            <li class="menu__item">Cases</li>
-            <li class="menu__item">FAQ</li>
-            <li class="menu__item">Contacts</li>
+            <li class="menu__item"><a href="#">Services</a></li>
+            <li class="menu__item"><a href="#">Media</a></li>
+            <li class="menu__item"><a href="#">Cases</a></li>
+            <li class="menu__item"><a href="#">FAQ</a></li>
+            <li class="menu__item"><a href="#">Contacts</a></li>
         </ul>
         <ul class="contacts">
             <li class = "contacts1">
@@ -30,11 +35,12 @@
                 </ul>
             </li>
         </ul>
+        <a class = "email__small-screen" href="mailto:itcompany@mail.com"><img class = "email-icon__small-screen" src="↳%20Icon%20Color%20(1).svg" alt="">itcompany@mail.com</a>
     </div>
     <br>
     <div class = "feedbackAndDescription">
         <div class = "description">
-            <h1 class="description__big">Development of <span class="blue__text">mobile applications</span> and <span class="blue__text">web services</span> of any complexity</h1>
+            <h2 class="description__big">Development of <span class="blue__text">mobile applications</span> and <span class="blue__text">web services</span> of any complexity</h2>
             <p class="description__small">We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
         </div>
         <div class="feedback">
@@ -46,7 +52,7 @@
                     <input id = "input_number" type="text" class="input__number">
                 </div>
                 <div class = "name__block">
-                    <label for="input_name" class="input__name__text">Phone number</label>
+                    <label for="input_name" class="input__name__text">Full name</label>
                     <input id = "input_name" type="text" class="input__name">
                 </div>
                 <button class = "button__consultation"><span class="button__text__consultation">Get consultation</span></button>
@@ -54,9 +60,80 @@
         </div>
     </div>
     <br>
-    <footer>
+    <div class = "development-cycle__block">
+        <h2 class = "description__big">Full development cycle</h2>
+        <p>We use proven technologies</p>
+        <h3 class = "Webtech__head">Web</h3>
+        <ui class = "Webtech__list">
+            <li>PHP</li>
+            <li>Javascript</li>
+            <li>Node.JS</li>
+            <li>Web Socket</li>
+            <li>Socket.IO</li>
+            <li>Vue.js</li>
+            <li>Nuxt</li>
+            <li>MySQL</li>
+            <li>Laravel</li>
+            <li>GO Lang</li>
+            <li>django</li>
+            <li>Python</li>
+        </ui>
+        <h3 class = "Mobiletech__head">Mobile</h3>
+        <ui class = "Mobiletech__list">
+            <li>Swift</li>
+            <li>Kotlin</li>
+            <li>Alamofire</li>
+            <li>Firebase</li>
+            <li>CoreData</li>
+            <li>Room</li>
+            <li>Realm</li>
+            <li>Coroutine</li>
+            <li>RxJava</li>
+            <li>RxSwift</li>
+            <li>Unit Test</li>
+            <li>Navigation</li>
+        </ui>
+        <ui class = "LinksTech__list">
+            <li><a href="#">IOS development</a></li>
+            <li><a href="#">Android development</a></li>
+            <li><a href="#">Web development</a></li>
+            <li><a href="#">UI/UX design</a></li>
+            <li><a href="#">Testing</a></li>
+            <li><a href="#">Launch</a></li>
+            <li><a href="#">IT consulting</a></li>
+        </ui>
+    </div>
+    <br>
+    <div class="Developed__projects-block">
+        <h2 class="description__big, description__big-projects-blog">Developed more than <span class="blue__text">100</span> projects in <span class="blue__text">15</span> industries</h2>
+        <ui class = "Projects__list">
+            <li><img src="pictures/Social%20media.png" alt="">Social media</li>
+            <li><img src="pictures/Education.png" alt="">Education</li>
+            <li><img src="pictures/AR.png" alt="">AR technology</li>
+            <li><img src="pictures/Fitness.png" alt="">Fitness and sport</li>
+            <li><img src="pictures/Auto.png" alt="">Auto, transport</li>
+            <li><img src="pictures/TV.png" alt="">TV series</li>
+            <li><img src="pictures/Bank.png" alt="">bank</li>
+            <li><img src="pictures/Medicine.png" alt="">Medicine, health</li>
+            <li><img src="pictures/Startups.png" alt="">Startups</li>
+            <li><img src="pictures/Construction.png" alt="">Construction</li>
+            <li><img src="pictures/Food.png" alt="">Restaurants, food delivery</li>
+            <li><img src="pictures/Religion.png" alt="">Religion</li>
+            <li><img src="pictures/Game.png" alt="">Game projects</li>
+            <li><img src="pictures/Marketplaces.png" alt="">Marketplaces</li>
+            <li><img src="pictures/Online%20cources.png" alt="">Online courses</li>
+        </ui>
+    </div>
+    <br>
+    <div class = "projects-example__block">
+        <h2 class= "description__big">Projects we are proud of</h2>
+        <p class = "description__small">Our software development company is truly proud of the wonderful clients we have worked with. We enjoy a long-term partnership</p>
+
+    </div>
+    <br>
+    <footer class="footer">
         <h1 class="h1__footer">IT WEBSITE</h1>
-        <div>
+        <div class="footer-main__block">
             <ul class="footer__names">
                 <li>Contact nums</li>
                 <li>Post</li>
@@ -66,6 +143,28 @@
             <ul class="footer__info">
                 <li>+7 (778) 395 90 26</li>
                 <li>mail@mail.com</li>
+                <li>City city, street st. 90</li>
+                <li>Leave a request</li>
+            </ul>
+        </div>
+        <h2 class="h2__footer">We work throughout world</h2>
+    </footer>
+    <footer class="footer__mobile">
+        <h1 class="h1__footer">IT WEBSITE</h1>
+        <div class="footer-main__block">
+            <ul class="footer__names">
+                <li>Contact nums</li>
+                <li>Post</li>
+            </ul>
+            <ul class="footer__info">
+                <li>+7 (778) 395 90 26</li>
+                <li>mail@mail.com</li>
+            </ul>
+            <ul class="footer__names">
+                <li>Address</li>
+                <li>Leave a request</li>
+            </ul>
+            <ul class="footer__info">
                 <li>City city, street st. 90</li>
                 <li>Leave a request</li>
             </ul>
