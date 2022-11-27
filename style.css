@@ -1,271 +1,257 @@
 @import "./global.css";
 @import "./fonts.css";
 @import "./utils.css";
-
-.main{
-    background-color: #F2F4F7;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    height: 800px;
-    z-index:1;
-    width: 100%;
-    overflow: clip;
-    position: relative;
+.main {
+  background-color: #F2F4F7;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 800px;
+  z-index: 1;
+  width: 100%;
+  overflow: clip;
+  position: relative;
+}
+.main .reviews {
+  display: flex;
+  flex-direction: row;
+  transform: rotate(-12deg);
+  position: absolute;
+  z-index: -1;
+  gap: 0px;
+  right: 0px;
+}
+.main .reviews .left-image {
+  background-image: url("./src/assets/img/column-left.webp");
+  width: 400px;
+  height: 1950px;
+  animation-name: image-up;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+.main .reviews .right-image {
+  background-image: url("./src/assets/img/column-right.webp");
+  width: 290px;
+  height: 1950px;
+  animation-name: image-down;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+.main .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 0px;
+  gap: 0px;
+  width: 50%;
+  height: 220px;
+  left: 108px;
+  top: 160px;
+}
+.main .contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 32px;
+  width: 700px;
+  height: 186px;
+  position: relative;
+  left: 108px;
+  top: 250px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 0px 24px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+}
+.main .contacts .main-connection-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 100%;
+  height: 58px;
 }
 
-.tech-list{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap:200px;
-    height: 400px;
-    z-index:1;
-    width: 100%;
-    overflow: clip;
-    position: relative;
+.tech-list {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 200px;
+  height: 400px;
+  z-index: 1;
+  width: 100%;
+  overflow: clip;
+  position: relative;
 }
-
-.description{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    padding: 0px;
-    gap: 0px;
+.tech-list .description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 0px;
+  gap: 0px;
+  width: 600px;
+  height: 104px;
+  left: 108px;
+  top: 20px;
 }
-
-.main .description{
-    width: 70%;
-    height: 220px;
-    left: 108px;
-    top: 160px;
+.tech-list .stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px;
+  margin-top: 10px;
+  position: relative;
+  width: 496px;
+  height: 200px;
+  left: 108px;
+  top: 50px;
 }
-
-.tech-list .description{
-    position: relative;
-    width: 600px;
-    height: 104px;
-    left: 108px;
-    top:20px;
+.tech-list .stack .stack-element {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 496px;
+  height: 84px;
 }
-
-.contacts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 32px;
-    width: 700px;
-    height: 186px;
-    position: relative;
-    left: 108px;
-    top: 250px;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 0px 24px rgba(0, 0, 0, 0.16);
-    border-radius: 12px;
+.tech-list .stack .stack-element h4 {
+  margin: 0px;
 }
-
-
-.main-connection-form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
-    width: 100%;
-    height: 58px;
+.tech-list .stack .stack-element p {
+  margin: 0px;
 }
-
-.reviews{
-    display: grid;
-    grid-template-columns: repeat(2, 310.49px);
-    grid-template-rows: repeat(2, 672.31px);
-    column-gap:20px;
-    row-gap: 20px;
-    transform: rotate(-12deg);
-    position: relative;
-    z-index:-1;
-    top:-300px;
-    overflow: clip;
+.tech-list .tech-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+  position: relative;
+  width: 233px;
+  height: 340px;
+  top: 30px;
 }
-
-.stack{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap:20px;
-    padding: 0px;
-    margin-top:10px;
-    position: relative;
-    width: 496px;
-    height: 200px;
-    left: 108px;
-    top: 50px;
-}
-
-.stack-element{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 16px;
-    width: 496px;
-    height: 84px;
-}
-
-.stack-element h4{
-    margin:0px;
-}
-
-.stack-element p{
-    margin:0px;
-}
-
-.tech-description{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap:30px;
-    position: relative;
-    width: 233px;
-    height: 340px;
-    top:30px;
-}
-
-.tech-description a:hover{
-    border-bottom: 1px solid #2D66EE;
+.tech-list .tech-description a:hover {
+  border-bottom: 1px solid #2D66EE;
 }
 
 @media screen and (max-width: 768px) {
-    .main{
-        height: 1100px;
-    }
-
-    .tech-list{
-        height: 600px;
-        gap:30px;
-    }
-    .main .description{
-        width:auto;
-    }
-    .contacts{
-        width: auto;
-        height: 500px;
-        left:30px;
-        padding-top: 0;
-    }
-
-    .contacts h4{
-        margin-top:10px;
-    }
-    .main-connection-form{
-        flex-direction: column;
-        gap: 50px;
-        top:0px;
-    }
-
-    .main .description{
-        left:30px;
-    }
-
-    .tech-list .description{
-        left:30px;
-        width:30%
-    }
-
-    .stack{
-        left:30px;
-        width:30%;
-        top:200px;
-    }
-
-    h4{
-        margin:0px;
-    }
-
-    p{
-        margin:0px;
-    }
-
+  .main {
+    height: 1100px;
+  }
+  .main .main .description {
+    width: auto;
+    left: 30px;
+  }
+  .main .contacts {
+    width: auto;
+    height: 500px;
+    left: 30px;
+    padding-top: 0;
+  }
+  .main .contacts h4 {
+    margin-top: 10px;
+  }
+  .main .contacts .main-connection-form {
+    flex-direction: column;
+    gap: 50px;
+    top: 0px;
+  }
+  .tech-list {
+    height: 600px;
+    gap: 30px;
+  }
+  .tech-list .description {
+    left: 30px;
+    width: 30%;
+  }
+  .tech-list .stack {
+    left: 30px;
+    width: 30%;
+    top: 200px;
+  }
+  h4 {
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+  }
 }
-
 @media screen and (max-width: 425px) {
-    .main{
-        height: 1500px;
-    }
-
-    .tech-list{
-        height: 1000px;
-        gap:30px;
-        flex-direction: column;
-    }
-    .main .description{
-        width:auto;
-    }
-    .contacts{
-        width: auto;
-        height: 500px;
-        top:600px;
-        left:30px;
-        padding-top: 0;
-    }
-
-    .reviews{
-        position:absolute;
-        top:300px;
-        left:0;
-        right:inherit;
-    }
-
-    .contacts h4{
-        margin-top:10px;
-    }
-    .main-connection-form{
-        flex-direction: column;
-        gap: 50px;
-        top:0px;
-    }
-
-    .main .description{
-        left:30px;
-    }
-
-    .tech-list .description{
-        left:30px;
-        width:30%;
-    }
-
-    .stack{
-        left:30px;
-        width:30%;
-    }
-
-    .tech-description{
-        top:250px;
-        left: 40px;
-        padding:0;
-
-    }
-
-    h4{
-        margin:0px;
-    }
-
-    p{
-        margin:0px;
-    }
-
+  .main {
+    height: 1500px;
+  }
+  .main .description {
+    width: auto;
+    left: 30px;
+  }
+  .main .contacts {
+    width: auto;
+    height: 500px;
+    top: 600px;
+    left: 30px;
+    padding-top: 0;
+  }
+  .main .contacts h4 {
+    margin-top: 10px;
+  }
+  .main .contacts .main-connection-form {
+    flex-direction: column;
+    gap: 50px;
+    top: 0px;
+  }
+  .main .reviews {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: inherit;
+  }
+  .tech-list {
+    height: 1000px;
+    gap: 30px;
+    flex-direction: column;
+  }
+  .tech-list .description {
+    left: 30px;
+    width: 30%;
+  }
+  .tech-list .stack {
+    left: 30px;
+    width: 30%;
+  }
+  .tech-list .tech-description {
+    top: 250px;
+    left: 40px;
+    padding: 0;
+  }
+  h4 {
+    margin: 0px;
+  }
+  p {
+    margin: 0px;
+  }
+}
+@keyframes image-up {
+  0% {
+    margin-top: 1000px;
+  }
+  100% {
+    margin-top: -2000px;
+  }
+}
+@keyframes image-down {
+  0% {
+    margin-top: -2000px;
+  }
+  100% {
+    margin-top: 1500px;
+  }
 }
 
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */
