@@ -16,6 +16,7 @@ html {
 body{
   padding: 0px;
   margin:0px;
+  position: relative;
 }
 
 header{
@@ -151,6 +152,7 @@ footer{
 
 ul{
   list-style-type: none;
+  padding: 0;
 }
 
 h1{
@@ -166,13 +168,11 @@ h2{
   font-family: 'Inter';
   font-weight: 500;
   font-size: 44px;
-  text-align: center;
 }
 
 h3{
   font-family: 'Inter';
   font-size: 36px;
-  text-align: center;
 }
 
 h4{
@@ -209,7 +209,7 @@ label{
   color: #667085;
 }
 
-input[type]:not(input[type='submit']){
+input[type]:not(input[type='submit'] and input[type='button']){
   border:none;
   border-bottom: 0.7px solid #D0D5DD;
   font-family: 'Inter';
@@ -220,7 +220,7 @@ input[type]:not(input[type='submit']){
   letter-spacing: -0.408px;
 }
 
-input[type = 'submit'] {
+input[type = 'submit'], input[type = 'button'] {
   background: #2D66EE;
   border-radius: 8px;
   color: white;
@@ -246,6 +246,7 @@ input[type = 'submit'] {
     padding: 0;
     justify-content: flex-start;
     width:700px;
+    margin-top: 10px;
 
     .footer{
       margin:0;
@@ -281,6 +282,7 @@ input[type = 'submit'] {
     padding: 0;
     justify-content: flex-start;
     width:400px;
+    margin-top: 10px;
 
     .footer{
       margin:0;
