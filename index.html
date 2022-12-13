@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WEBIS</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media-tablet.css">
+    <link rel="stylesheet" href="./styles/media-phone.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <input id="burger" type="checkbox" />
+            <div class="header-content">
+                <div class="header-menu-btn">
+                    <label for="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <a href="#" class="header-logo">IT WEBSITE</a>
+                <ul class="header-navigation">
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Media</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+                <div class="header-contacts">
+                    <div class="header-contacts-phones">
+                        <img src="./assets/img/header/phone.svg" alt="phone">
+                        <p>+7 (111) 111 11 11</p>
+                        <p>+7 (111) 111 11 11</p>
+                    </div>
+                    <div class="header-contacts-mails">
+                        <img src="./assets/img/header/mail.svg" alt="mail">
+                        <p>itcompany@mail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="wrapper">
+                <h1 class="hero-title">
+                    Development of <span>mobile applications</span> and <span>web services</span> of any complexity
+                </h1>
+                <p class="hero-text">
+                    We create mobile applications for iOS, Android that transfer your business to mobile applications of
+                    your customers' devices
+                </p>
+                <div class="hero-contacts">
+                    <h3>
+                        Leave your contacts and we will call you back within 30 minutes
+                    </h3>
+                    <form action="" class="hero-form">
+                        <div class="hero-form-el">
+                            <label for="number">Phone number</label>
+                            <input type="text" id="number" value="+7 (111) 111-11-11">
+                        </div>
+                        <div class="hero-form-el">
+                            <label for="full-name">Full name</label>
+                            <input type="text" id="full-name" value="Иван Иванов">
+                        </div>
+                        <button type="submit">Get consultation</button>
+                    </form>
+                </div>
+            </div>
+            <div class="hero-image"></div>
+        </section>
+        <section class="cycle">
+            <div class="wrapper">
+                <div class="cycle-technologies">
+                    <h2>Full development cycle</h2>
+                    <p>We use proven technologies</p>
+                    <h3>Web</h3>
+                    <p>PHP <span>/</span> Javascript <span>/</span> Node.JS <span>/</span> Web Socket <span>/</span> Socket.io
+                        <span>/</span> Vue.js <span>/</span> Nuxt <span>/</span> MySQL <span>/</span> Laravel
+                        <span>/</span> GO lang <span>/</span> django <span>/</span> Python</p>
+                    <h3>Mobile</h3>
+                    <p>Swift <span>/</span> Kotlin <span>/</span> Alamofire <span>/</span> Firebase <span>/</span> CoreData 
+                        <span>/</span> Room <span>/</span> Realm <span>/</span> Coroutine <span>/</span> RxJava 
+                        <span>/</span> RxSwift <span>/</span> Unit Test <span>/</span> Navigation</p>
+                </div>
+                <ul class="cycle-pages">
+                    <li><a href="#">iOS  development</a><img src="./assets/img/arrow.svg" alt="arrow"></li>
+                    <li><a href="#">Android development</a><img src="./assets/img/arrow.svg" alt="arrow"></li>
+                    <li><a href="#">Web development</a><img src="./assets/img/arrow.svg" alt="arrow"></li>
+                    <li><a href="#">UI/UX design</a><img src="./assets/img/arrow.svg" alt="arrow"></li>
+                    <li><a href="#">Testing</a><img src="./assets/img/arrow.svg" alt="arrow"></li>
+                    <li><a href="#">Launch</a><img src="./assets/img/arrow.svg" alt="arrow"></li>
+                    <li><a href="#">IT consulting</a><img src="./assets/img/arrow.svg" alt="arrow"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects"></section>
+        <section class="discuss"></section>
+        <section class="stages"></section>
+        <section class="team"></section>
+        <section class="book"></section>
+        <section class="FAQ"></section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer-content">
+                <h3 class="footer-title">IT WEBSITE</h3>
+                <div class="footer-contacts">
+                    <div class="footer-contacts-el">
+                        <img src="./assets/img/footer/phone.svg" alt="phone">
+                        <label>Contact nums</label>
+                        <p>+7 (778) 395 90 26</p>
+                    </div>
+                    <div class="footer-contacts-el">
+                        <img src="./assets/img/footer/mail.svg" alt="mail">
+                        <label>Post</label>
+                        <p>mail@mail.com</p>
+                    </div>
+                    <div class="footer-contacts-el">
+                        <img src="./assets/img/footer/location.svg" alt="location">
+                        <label>Adress</label>
+                        <p>City city, steet st. 90</p>
+                    </div>
+                    <div class="footer-contacts-el">
+                        <img src="./assets/img/footer/paper.svg" alt="paper">
+                        <label>Leave a request</label>
+                        <p>Leave a request</p>
+                    </div>
+                </div>
+                <div class="footer-quote">
+                    <img src="./assets/img/footer/island.svg" alt="island">
+                    <p>We work throughout world</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
