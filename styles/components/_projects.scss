@@ -1,0 +1,228 @@
+.projects {
+    background-color: $gray100;
+
+    .wrapper {
+        padding: 80px 16px 63px;
+        position: relative;
+
+        .projects-title {
+            max-width: 600px;
+            font-family: $titleText;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 144%;
+            letter-spacing: 0.326451px;
+            color: $gray900;
+
+            span {
+                color: $blueColor
+            }
+        }
+
+        .projects-industries {
+            margin: 28px 0 105px;
+            display: flex;
+            column-gap: 25px;
+            row-gap: 15px;
+            flex-wrap: wrap;
+
+            .projects-industries-el {
+                display: flex;
+                align-items: center;
+                width: 391px;
+                column-gap: 16px;
+
+                img {
+                    width: 44px;
+                    height: 44px;
+                }
+
+                p {
+                    display: inline-block;
+                    font-size: 17px;
+                    line-height: 17px;
+                    letter-spacing: -0.408px;
+                    color: $gray900;
+                }
+            }
+        }
+
+        .projects-examples-title {
+            max-width: 600px;
+
+            h2 {
+                font-family: $titleText;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 144%;
+                letter-spacing: 0.326451px;
+                color: $gray900;
+            }
+
+            p {
+                margin: 24px 0 70px;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.24px;
+                color: $gray900;
+            }
+        }
+
+        .project-examples-navigation {
+            margin: 0 0 60px;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 12px;
+                column-gap: 32px;
+
+                li {
+                    a {
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 22px;
+                        letter-spacing: -0.408px;
+                        color: $gray800;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        border-bottom: 2px solid $blueColor;
+
+                        a {
+                            font-weight: 500;
+                            color: $gray900
+                        }
+                    }
+                }
+            }
+        }
+
+        .projects-example-button {
+            position: absolute;
+            top: 775px;
+            right: 164px;
+            width: 207px;
+            height: 40px;
+            background: $blueColor;
+            border-radius: 8px;
+
+            font-weight: 600;
+            color: $whiteColor;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .projects-iteka {
+            display: flex;
+            column-gap: 20px;
+
+            .projects-iteka-content {
+                width: 600px;
+                display: inline-block;
+
+                h3 {
+                    font-family: $titleText;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 144%;
+                    letter-spacing: 0.326451px;
+                    color: $gray900;
+                }
+
+                .projects-iteka-content-desc {
+                    margin: 32px 0 40px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.24px;
+                    color: $gray900;
+                }
+
+                .projects-iteka-content-tech {
+                    margin: 0 0 40px;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 22px;
+                    letter-spacing: -0.408px;
+                    color: $gray600;
+
+                    span {
+                        color: $blueColor;
+                    }
+                }
+
+                .projects-iteka-content-icons {
+                    display: flex;
+
+                    .projects-iteka-content-icons-el {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            margin: 0 12px 0 0;
+                        }
+
+                        p {
+                            margin: 0 35px 0 0;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 20px;
+                            letter-spacing: -0.24px;
+                            color: $gray900;
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                .projects-iteka-content-statistics {
+                    margin: 40px 0;
+                    display: flex;
+                    column-gap: 48px;
+
+                    div {
+                        h3 {
+                            font-family: $titleText;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 144%;
+                            letter-spacing: 0.326451px;
+                            color: $gray900;
+                        }
+
+                        p {
+                            margin: 8px 0 0;
+                            font-weight: 400;
+                            font-size: 13px;
+                            line-height: 16px;
+                            letter-spacing: -0.078px;
+                            color: $gray500;
+                        }
+                    }
+                }
+
+                .projects-iteka-content-apps {
+                    img:first-child {
+                        margin: 0 17px 0 0;
+                    }
+                }
+            }
+
+            .projects-iteka-image {
+                width: 600px;
+                height: 326px;
+                display: inline-block;
+                margin: 0 0 0 20px;
+                background-image: url('../../assets/img/projects/i-teka.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

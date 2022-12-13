@@ -1,0 +1,75 @@
+.team {
+    background-color: $gray100;
+
+    .wrapper {
+        padding: 80px 16px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .team-content {
+            max-width: 600px;
+
+            h2 {
+                margin: 0 0 32px;
+                font-family: $titleText;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 144%;
+                letter-spacing: 0.326451px;
+                color: $gray900;
+            }
+
+            p {
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.24px;
+                color: $gray900;
+            }
+
+            .team-statistics {
+                margin: 32px 0;
+                display: flex;
+                column-gap: 16px;
+                row-gap: 16px;
+                flex-wrap: wrap;
+
+                .team-statistics-el {
+                    width: 184px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h3 {
+                        font-family: $titleText;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 144%;
+                        letter-spacing: 0.326451px;
+                        color: $gray900;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: $gray500;
+                    }
+                }
+            }
+        }
+
+        .team-video-desktop {
+            width: 603px;
+            height: 392px;
+            background-image: url('../../assets/img/team/team-video.png'), url('../../assets/img/team/team.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0 20px 20px 0px gray;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

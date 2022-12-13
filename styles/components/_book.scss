@@ -1,0 +1,94 @@
+.book {
+    background-color: $blueColor;
+    background-image: url('../../assets/img/Noise.png');
+
+    .wrapper {
+        padding: 80px 16px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .book-content {            
+            h2 {
+                max-width: 600px;
+                margin: 0 0 40px 0;
+
+                font-family: $titleText;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 144%;
+                letter-spacing: 0.326451px;
+                color: $gray25;
+            }
+
+            form {
+                max-width: 600px;
+                background-color: $whiteColor;
+                box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 0px 24px rgba(0, 0, 0, 0.16);
+                border-radius: 12px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                padding: 24px;
+
+                .book-form-el {
+                    min-width: 264px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    padding: 16px 0;
+
+                    label {
+                        display: block;
+                        font-size: 13px;
+                        line-height: 16px;
+                        letter-spacing: -0.078px;
+                        color: $gray500;
+                    }
+
+                    input {
+                        padding: 8px 0;
+                        border-bottom: 0.7px solid $gray300;
+
+                        font-weight: 400;
+                        font-size: 17px;
+                        line-height: 22px;
+                        letter-spacing: -0.408px;
+
+                        &:focus {
+                            outline: auto;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        width: 100%;
+                    }
+                }
+
+                button {
+                    display: block;
+                    padding: 11px 24px;
+                    background: $blueColor;
+                    border-radius: 8px;
+                    color: $whiteColor;
+                    font-weight: 600;
+                    margin: 24px 0 0 auto;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .book-image {
+            position: relative;
+            top: -20px;
+            margin: 0 auto;
+            width: 343.85px;
+            height: 520px;
+            background-image: url('../../assets/img/book/book.png');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

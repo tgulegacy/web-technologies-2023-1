@@ -1,0 +1,351 @@
+@media (max-width: 426px) {
+
+    // Header
+    // Close menu
+    .header .wrapper .header-content {
+        justify-content: start;
+        padding: 35px 0;
+
+        .header-navigation,
+        .header-contacts {
+            display: none;
+        }
+
+        .header-menu-btn label span {
+            width: 40px;
+            height: 4px;
+            margin: 0 0 0 17px;
+        }
+    }
+
+    // Open menu
+    #burger:checked {
+        &~.header-content {
+            height: 642px;
+
+            /* Menu button */
+            .header-menu-btn label {
+                top: 34px;
+                right: 29px;
+            }
+
+            /* Menu content */
+            .header-logo {
+                font-size: 20px;
+                line-height: 18px;
+                margin: 98px auto 52px;
+            }
+
+            .header-navigation {
+                row-gap: 21px;
+
+                li a {
+                    font-size: 24px;
+                    line-height: 144%;
+                }
+            }
+
+            .header-contacts {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    // Footer
+    .footer {
+        .wrapper {
+            .footer-content {
+                padding: 32px 0;
+
+                .footer-contacts {
+                    margin: 50px 0 20px 36px;
+
+                    .footer-contacts-el {
+                        width: 154px;
+
+                        &:nth-child(odd) {
+                            margin: 0 50px 32px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Main
+    // Hero
+    .hero {
+        width: 100%;
+        min-height: 1267px;
+        max-height: 1400px;
+
+        .wrapper {
+            padding: 0 16px;
+
+            .hero-contacts {
+                width: 393px;
+                margin-top: 536px;
+                padding: 32px;
+            }
+
+            .hero-image {
+                z-index: -1;
+                top: 200px;
+                right: -1px;
+                width: 410px;
+                height: 890px;
+
+                background-image: url('/assets/img/hero/hero-phone.png');
+            }
+        }
+    }
+
+    // Cycle
+    .cycle {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            column-gap: 0px;
+            padding: 0 40px;
+
+            .cycle-pages {
+                margin-top: 44px;
+                padding: 0;
+            }
+
+            .cycle-pages li:last-child {
+                margin-bottom: 64px;
+            }
+        }
+    }
+
+    // Projects
+    .projects {
+        .wrapper {
+            padding: 31px 16px 148px;
+
+            .projects-industries {
+                margin: 27px 0 32px;
+                column-gap: 32px;
+
+                .projects-industries-el {
+                    max-width: 171px;
+                }
+            }
+
+            .projects-examples-title {
+                max-width: 100%;
+
+                p {
+                    margin: 31px 0 32px;
+                }
+            }
+
+            .project-examples-navigation {
+                margin: 0 0 32px;
+            }
+
+            .projects-example-button {
+                position: absolute;
+                top: 1538px;
+                right: 83px;
+                width: 258px;
+            }
+
+            .projects-iteka {
+                flex-direction: column-reverse;
+                column-gap: 0px;
+
+                .projects-iteka-content {
+                    width: 336px;
+                    display: inline-block;
+                    position: relative;
+
+                    .projects-iteka-content-desc {
+                        position: static;
+                        max-width: 393px;
+                        margin: 20px 0 0;
+                    }
+
+                    .projects-iteka-content-tech {
+                        margin: 20px 0 34px;
+                    }
+                }
+
+                .projects-iteka-image {
+                    width: 393px;
+                    height: 225px;
+                    margin: 0 0 32px;
+                    position: static;
+                }
+            }
+        }
+    }
+
+    // Discuss
+    .discuss {
+        min-height: 669px;
+
+        .wrapper {
+            row-gap: 128px;
+            padding: 34px 16px 55px;
+
+            .discuss-content {
+                max-width: 393px;
+            }
+
+            form {
+                max-width: 600px;
+                padding: 36px 17px;
+                justify-content: start;
+
+                .discuss-form-el {
+                    width: 100%;
+                }
+
+                button {
+                    display: inline;
+                    padding: 11px 62px;
+                    margin: 28px auto 0;
+                }
+            }
+        }
+    }
+
+    // Stages
+    .stages {
+        .wrapper {
+            padding: 32px 19px;
+
+            .stages-title {
+                margin-bottom: 51px;
+            }
+
+            .stages-groups {
+                flex-direction: column;
+
+                .stages-group {
+
+                    .stages-el {
+                        margin: 0 0 20px;
+
+                        p {
+                            max-width: 266px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Team
+    .team {
+        .wrapper {
+            padding: 28px 17px 45px;
+
+            .team-content {
+                max-width: 392px;
+
+                h2 {
+                    margin: 0 0 20px;
+                }
+
+                p {
+                    max-width: 392px;
+
+                    &:nth-child(5) {
+                        max-width: 392px;
+                    }
+                }
+
+                .team-video-media {
+                    margin: 22px 0 56px;
+                    width: 392px;
+                    height: 237px;
+                }
+
+                .team-statistics {
+                    margin: 0 0 20px;
+                    justify-content: space-between;
+                    column-gap: 0;
+
+                    .team-statistics-el {
+                        max-width: 102px;
+                        row-gap: 20px;
+
+                        h3 {
+                            font-size: 28px;
+                            line-height: 24px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            line-height: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Book
+    .book {
+        .wrapper {
+            padding: 40px;
+
+            .book-content {
+                max-width: 333px;
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    max-width: 333px;
+                    margin: 0 0 32px;
+                }
+
+                .book-image-media {
+                    align-self: center;
+                    background-image: url('../../assets/img/book/book.png');
+                    background-size: cover;
+                    width: 160.22px;
+                    height: 242.31px;
+                    margin: 0 auto 32px;
+                }
+
+                form {
+                    max-width: 335px;
+                    padding: 35px 32px;
+
+                    .book-form-el {
+                        width: 100%;
+                        margin: 0 0 48px;
+                        padding: 0;
+                    }
+
+                    button {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .book-image {
+                display: none;
+            }
+        }
+    }
+
+    // FAQ
+    .faq {
+        h2 {
+            margin: 32px 0 32px 16px;
+            font-size: 28px;
+        }
+
+        .questions {
+            margin: 0 0 32px 16px;
+        }
+    }
+}
