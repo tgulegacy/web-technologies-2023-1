@@ -1,0 +1,122 @@
+@media (max-width: 426px) {
+    /* Header */
+    /* Close menu */
+    .header
+    .wrapper
+    .header-content {
+        justify-content: start;
+        padding: 35px 0;
+
+        .header-navigation,
+        .header-contacts {
+            display: none;
+        }
+
+        .header-menu-btn label span {
+            width: 40px;
+            height: 4px;
+            margin: 0 0 0 17px;
+        }
+    }
+
+    /* Open menu */
+    #burger:checked {
+        &~.header-content {
+            height: 642px;
+            
+            /* Menu button */
+            .header-menu-btn label {
+                top: 34px;
+                right: 29px;
+            }
+
+            /* Menu content */
+            .header-logo {
+                font-size: 20px;
+                line-height: 18px;
+                margin: 98px auto 52px;
+            }
+
+            .header-navigation {
+                row-gap: 21px;
+
+                li a {
+                    font-size: 24px;
+                    line-height: 144%;
+                }
+            }
+
+            .header-contacts {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    /* Footer */
+    .footer {
+        .wrapper {
+            .footer-content {
+                padding: 32px 0;
+                .footer-contacts {
+                    margin: 50px 0 20px 36px;
+                    .footer-contacts-el {
+                        width: 154px;
+                        
+                        &:nth-child(odd) {
+                            margin: 0 50px 32px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    /* Main */
+    /* Hero */
+   .hero {
+        width: 100%;
+        min-height: 1267px;
+        max-height: 1400px;
+        .wrapper {
+            padding: 0 16px;
+    
+            .hero-contacts {
+                width: 393px;
+                margin-top: 536px;
+                padding: 32px;
+            }
+
+            .hero-image {
+                z-index: -1;
+                top: 200px;
+                right: -1px;
+                width: 410px;
+                height: 890px;
+    
+                background-image: url('/assets/img/hero/hero-phone.png');
+            }
+        }
+    }
+
+    /* Cycle */
+    .cycle {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            column-gap: 0px;
+            padding: 0 40px;
+
+            .cycle-pages {
+                margin-top: 44px;
+                padding: 0;
+            }
+    
+            .cycle-pages li:last-child {
+                margin-bottom: 64px;
+            }
+        }
+    }
+}
