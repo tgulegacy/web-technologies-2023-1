@@ -1,0 +1,80 @@
+/* Cycle */
+.cycle {
+    position: relative;
+    z-index: 1;
+    background-color: $whiteColor;
+
+    .wrapper {
+        display: flex;
+        column-gap: 128px;
+        padding: 80px 16px;
+    }
+
+    .cycle-technologies {
+        width: 600px;
+
+        color: $gray900;
+
+        h2 {
+            margin-bottom: 32px;
+        
+            font-family: $titleText;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 144%;
+            letter-spacing: 0.326451px;
+        }
+
+        h3 {
+            margin: 32px 0 16px;
+        
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.38px;
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            
+            & ~ p {
+                max-width: 496px;
+            
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 22px;
+                letter-spacing: -0.408px;
+                color: $gray700;
+
+                span {
+                    color: $blueColor;
+                }
+            }
+        }
+    }
+
+    .cycle-pages {
+        li {
+            padding: 12px 0;
+            
+            a {
+                margin-right: 21px;
+            
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: 0.38px;
+                color: $gray800;
+
+                &:hover {
+                    border-bottom: 1px solid $blueColor;
+    
+                    font-weight: 600;
+                    color: $gray900;
+                }
+            }
+        }
+    }
+}

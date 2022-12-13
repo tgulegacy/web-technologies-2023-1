@@ -1,0 +1,14 @@
+@mixin heroImageAnimation($name, $startPosition, $endPosition) {
+    animation-name: $name;
+
+    @at-root {
+        @keyframes #{$name} {
+            0% {
+                background-position: 0 $startPosition;
+            }
+            100% {
+                background-position: 0 $endPosition;
+            }
+        }
+    }
+}
