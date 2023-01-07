@@ -31,6 +31,8 @@ export const TicTacToe = {
     [[1, 3], [2, 3], [3, 3]],
   ],
 
+  
+
   /**
    * Функция инициализации элементов и запуска игры
    * @returns {object} - текущий объект
@@ -47,13 +49,14 @@ export const TicTacToe = {
    * Функция инициализации слушателей события клика по ячейке
    */
   initListeners() {
+    const restartBtn=document.querySelector("#restart-btn");
+    console.log(restartBtn)
+    restartBtn.addEventListener("click",this.restartGame());
+
     this.boxes.forEach(box => {
       box.addEventListener('click', event => {
         // проверка не закончилась ли игра и не пустой ли блок
-        if (
-          this.isGameEnd || 
-          !this.isBlockEmpty(event.target)
-        ) {
+        if (this.isGameEnd || !this.isBlockEmpty(event.target)) {
           return
         }
 
@@ -64,11 +67,14 @@ export const TicTacToe = {
         
         // проверка на победу
         if (this.checkForWin()) {
+          console.log("победа")
           // изменение статуса игры
           this.setGameEndStatus()
         }
 
-        // проверка на наличие пустых блоков
+        console.log(this.checkHasEmptyBlocks())
+
+        
         if (!this.checkHasEmptyBlocks()) {
           // изменение статуса игры
           this.setGameEndStatus()
@@ -102,6 +108,15 @@ export const TicTacToe = {
    * @returns {boolean} - true если есть пустые блоки, false - если нет
    */
   checkHasEmptyBlocks() {
+    let countEmpty=0;
+    this.matrix.forEach(item=>{
+      item.forEach(i=>{
+        if(i==null){
+          countEmpty+=1
+        }
+      })
+    })
+    return countEmpty;
   },
 
   /**
@@ -116,6 +131,17 @@ export const TicTacToe = {
    * Сброс данных и очищение дом дерева
    */
   restartGame() {
+    for(let i=0;i<this.matrix.length;i++){
+      for(let j=0;j<this.matrix[i].length;j++){
+        this.matrix[i][j]=null;
+      }
+    }
+    this.boxes.forEach(item=>{
+      item.innerHTML="";
+    })
+    this.isXTurn=true;
+    this.isGameEnd=false;
+    this.onMove(this.isXTurn);
   },
   
   /**
@@ -125,7 +151,6 @@ export const TicTacToe = {
    */
   isBlockEmpty(target) {
     const [row, col] = this.getBlockPosition(target)
-    
     return !this.matrix[row - 1][col - 1]
   },
 
@@ -136,7 +161,6 @@ export const TicTacToe = {
    */
   getBlockPosition(target) {
     const {row, col} = target.dataset
-    
     return [row, col]
   },
   
@@ -148,6 +172,9 @@ export const TicTacToe = {
    * @param {boolean?} clear - если true - отчистить ячейку в матрице
    */
   setBlockValue(target, clear) {
+      const col=target.getAttribute('data-col');
+      const row=target.getAttribute('data-row');
+      this.matrix[row-1][col-1]=this.getCurrentTurnValue();
   },
 
   /**
@@ -158,6 +185,10 @@ export const TicTacToe = {
    * @param {boolean?} clear - если true - отчистить target
    */
   setBlockDom(target, clear) {
+    if(clear){
+      target.innerHTML="";
+    }
+    target.innerHTML=this.getCurrentTurnValue();
   },
 
   /**
@@ -165,12 +196,19 @@ export const TicTacToe = {
    * @returns {string} Текущий ход 'X' или 'O'
    */
   getCurrentTurnValue() {
+    if(this.isXTurn){
+      return "X";
+    }
+    return "O";
   },
 
   /**
    * Изменение текущего хода в данных
    */
+  
+
   changeTurnValue() {
+    this.isXTurn=!this.isXTurn;
   },
 
   /**
@@ -197,5 +235,6 @@ export const TicTacToe = {
    * Установить статус об окончании игры
    */
   setGameEndStatus() {
+    this.isGameEnd=true;
   }
 }
