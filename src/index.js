@@ -1,170 +1,104 @@
-class PizzaType {
-    static Margarita = {
-        id: 'Margarita',
-        name: 'Маргарита',
-        price: 500,
-        calories: 300
-    };
-    static Pepperoni = {
-        id: 'Pepperoni',
-        name: 'Пепперони',
-        price: 800,
-        calories: 400
-    };
-    static Bavarian = {
-        id: 'Bavarian',
-        name: 'Баварская',
-        price: 700,
-        calories: 450
-    };
+function setSizeListeners(isSelectedTypeActive) {
+    const sizeSelector = '.pizza-order__size', size = [...document.querySelectorAll(sizeSelector)][0].dataset.size;
+    pizza.setSize(PizzaSize[size]);
+
+    document.querySelectorAll(sizeSelector).forEach(size => {
+        size.addEventListener('click', (e) => {
+            const backgroundItem = document.querySelector('.background-item'),
+                sizeItems = [...document.querySelectorAll('.pizza-order__size')];
+
+            pizza.setSize(PizzaSize[e.currentTarget.dataset.size]);
+
+            // Высчитывает левый отступ по всем левым элементам от выбранного.
+            // Начальное значение 10 потому что padding: 10px
+            let left;
+            left = sizeItems.slice(0, sizeItems.indexOf(e.target)).reduce((acc, sizeItem, currentIndex, arr) => {
+                return acc + sizeItem.offsetWidth
+            }, 10);
+
+            backgroundItem.setAttribute('style', 'left: ' + left + 'px; width: ' + e.target.offsetWidth + 'px');
+            updateOrderButton();
+            updateToppingsPrice();
+        })
+    })
+
 }
 
-class PizzaSize {
-    static Big = {
-        id: 'big',
-        name: 'Большая',
-        price: 200,
-        calories: 200
-    };
-    static Small = {
-        id: 'small',
-        name: 'Маленькая',
-        price: 100,
-        calories: 100
-    };
+function setToppingListeners() {
+    const toppingSelector = '.pizza-order__topping', activeToppingClass = 'pizza-order__topping_active',
+        toppings = document.querySelectorAll(toppingSelector);
+
+    toppings.forEach(topping => {
+        topping.addEventListener('click', (e) => {
+            e.currentTarget.classList.toggle(activeToppingClass);
+
+            const isSelectedToppingActive = e.currentTarget.classList.contains(activeToppingClass);
+
+            if (!isSelectedToppingActive) {
+                pizza.deleteTopping(PizzaTopping[e.currentTarget.dataset.topping]);
+            } else {
+                pizza.addTopping(PizzaTopping[e.currentTarget.dataset.topping]);
+            }
+
+            updateOrderButton()
+        });
+    });
 }
 
-class PizzaTopping {
-    static CreamyMozzarella =  {
-        id: 'creamyMozzarella',
-        name: 'Сливочная Моцарелла',
-        info: {
-            big: {
-                price: 100,
-                calories: 0
-            },
-            small: {
-                price: 50,
-                calories: 0
-            }
-        }
-    };
-    static CheesyEdge =  {
-        id: 'cheesyEdge',
-        name: 'Сырный борт',
-        info: {
-            big: {
-                price: 300,
-                calories: 50
-            },
-            small: {
-                price: 150,
-                calories: 50
-            }
-        }
-    };
-    static CheddarAndParmesan =  {
-        id: 'cheddarAndParmesan',
-        name: 'Чеддер и Пармезан',
-        info: {
-            big: {
-                price: 300,
-                calories: 50
-            },
-            small: {
-                price: 150,
-                calories: 50
-            }
-        }
-    };
-}
+function setTypeListeners() {
+    const typeSelector = '.pizza-order__type', activeTypeClass = 'pizza-order__type_active',
+        types = document.querySelectorAll(typeSelector);
+    let isSelectedTypeActive = false;
 
-class Pizza {
-    #type;
-    #size;
-    #toppings;
+    for (const type of types) {
+        type.addEventListener('click', (e) => {
 
-    constructor(type, size, toppings) {
-        this.#type = type;
-        this.#size = size;
-        this.#toppings = toppings.map(topping => this.#convertTopping(topping));
+            for (const el of types) {
+                el !== e.currentTarget && el.classList.remove(activeTypeClass);
+            }
+
+            e.currentTarget.classList.toggle(activeTypeClass);
+
+            isSelectedTypeActive = e.currentTarget.classList.contains(activeTypeClass);
+
+            pizza.setType(PizzaType[e.currentTarget.dataset.type]);
+            if (isSelectedTypeActive) {
+                document.querySelector('.pizza-order__disabled').style.display = 'none';
+            } else {
+                document.querySelector('.pizza-order__disabled').style.display = 'block';
+            }
+
+            updateOrderButton(!isSelectedTypeActive);
+        });
     }
 
-    /**
-     * Избавляемся от big и size в topping
-     * @param {{name: string, price: number, calories: number}} topping
-     * @returns {{name: string, price: number, calories: number}}
-     */
-    #convertTopping = topping => ({
-        id: topping.id,
-        name: topping.name,
-        price: topping.info[this.#size.id].price,
-        calories: topping.info[this.#size.id].calories,
-    });
-
-    /**
-     * Добавление начинки
-     * @param {{name: string, id: string, info: {small: {price: number, calories: number}, big: {price: number, calories: number}}}} topping
-     * @returns {Pizza}
-     */
-    addTopping = topping => {
-        this.#toppings.push(this.#convertTopping(topping));
-        return this;
-    };
-
-    /**
-     * Убрать начинку
-     * @param {{name: string, price: number, calories: number}} topping
-     * @returns {Pizza}
-     */
-    deleteTopping = topping => {
-        const toppingToRemove = this.#toppings.find(t => {
-            return t.id === this.#convertTopping(topping).id;
-        });
-        this.#toppings.splice(toppingToRemove, 1);
-        return this;
-    };
-
-    /**
-     * Получить список топпингов
-     * @returns {[{name: string, price: number, calories: number}]}
-     */
-    getToppings = () => this.#toppings;
-
-    /**
-     * Получить вид пиццы
-     * @returns {string}
-     */
-    getType = () => this.#type.name;
-
-    /**
-     * Получить размер пиццы
-     * @returns {string}
-     */
-    getSize = () => this.#size.name;
-
-    /**
-     * Высчитать цену пиццы
-     * @returns {number}
-     */
-    calculatePrice = () => [this.#size, this.#type, ...this.#toppings]
-        .reduce((acc, currValue) => acc += currValue.price, 0);
-
-    /**
-     * Высчитать калории
-     * @returns {number}
-     */
-    calculateCalories = () => [this.#size, this.#type, ...this.#toppings]
-        .reduce((acc, currValue) => acc += currValue.calories, 0);
+    setSizeListeners(isSelectedTypeActive);
+    setToppingListeners();
 }
 
-const pizza = new Pizza(
-    PizzaType.Pepperoni,
-    PizzaSize.Small,
-    [
-        PizzaTopping.CheesyEdge,
-        PizzaTopping.CheddarAndParmesan
-    ]
-);
+function initBackgroundItem() {
+    const sizeItems = document.querySelectorAll('.pizza-order__size'),
+        backgroundItem = document.querySelector('.background-item');
+    backgroundItem.setAttribute('style', 'left: ' + 4 + 'px; width: ' + sizeItems[0].offsetWidth + 'px');
+}
 
-console.log(pizza.addTopping(PizzaTopping.CreamyMozzarella).calculatePrice()); //1250
+function updateOrderButton(isReset) {
+    if (!isReset) {
+        document.querySelector('.pizza-order__total-price').innerHTML = pizza.calculatePrice();
+        document.querySelector('.pizza-order__total-calories').innerHTML = pizza.calculateCalories();
+    } else {
+        document.querySelector('.pizza-order__total-price').innerHTML = '0';
+        document.querySelector('.pizza-order__total-calories').innerHTML = '0';
+    }
+}
+
+function updateToppingsPrice() {
+    document.querySelectorAll('.pizza-order__topping').forEach(topping => {
+        topping.querySelector('.pizza-order__topping-price').innerHTML = PizzaTopping[topping.dataset.topping].info[pizza.getSize().id].price;
+    });
+}
+
+const pizza = new Pizza(null, null, null);
+
+initBackgroundItem();
+setTypeListeners();
