@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documents</title>
+    <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
 <body>
+
 <header>
     <div class="logo">
         <img src="./../assets/icons/logo.jpg" alt="Image Logo" width="500" height="600">
+        <ul>
         <li>
             <a href="./../index.html">
                 Главная
@@ -18,6 +24,34 @@
                 Контакты
             </a>
         </li>
+       </ul>
+    </div>
+    <div class="breadcrumbs">
+        <div>
+            <a href="#">
+                Один
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                Два
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                Три
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                Четыре
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                Пять
+            </a>
+        </div>
     </div>
 </header>
 
@@ -64,19 +98,20 @@
     <h4>
         Message for us
     </h4>
-    <from action="">
-        <label>
+
+    <from action="" class="contact-form">
+        <label for="first name">
             First Name
         </label>
-        <input id="first name" type="text" placeholder="first name" name="first_name"
+        <input class="input" id="first name" type="text" placeholder="first name" name="first_name">
                <label for="mail">
                    mail
                </label>
-        <input id="mail" type="email" placeholder="mail" name="mail">
+        <input class="input" id="mail" type="email" placeholder="mail" name="mail">
         <label for="message">
             message
         </label>
-            <textarea id="message" placeholder="message" name="message"></textarea>
+            <textarea class="input" id="message" placeholder="message" name="message"></textarea>
             <input type="submit" name="submit">
     </from>
 </div>
@@ -90,8 +125,10 @@
         Don't worry, the character won't die from such intense stress the first time.
     </p>
     <hr>
+
     <ul>
-        <li>Also in this situation, the buyer has the right to go to court
+        <li>Also in this situation, the buyer has the right to go to court</li>
+            <li>
             <a href="tel: 89667632001">
                 89667632001
             </a>
