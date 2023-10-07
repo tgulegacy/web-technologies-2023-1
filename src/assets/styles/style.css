@@ -2,90 +2,98 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-p.p{
-    font-size: 16px;
-    line-height: 26px;
-    color: #1F3F68
+body{
+    margin: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 15px;
+}
+.container {
+    margin: 0 166px;
 }
 
-h1.h1{
-    font-size: 64px;
-    color: #1F3F68;
+.header {
+    background-image: url("../icons/welcome.png");
+    height: 100vh;
+    background-repeat: round;
+    background-repeat: no-repeat;
+    background-position:80% 90%;
 }
-
-h2.contacts-h2{
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
-}
-
-h3.h3{
-    font-size: 36px;
-    text-align: center;
-}
-
-h4.h4{
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
-}
-
-input.input, textarea.input{
-    border: 1px solid #356EAD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.4;
-}
-
-.contacts-form{
-    background: url("./../img/download.jpg");
-}
-.submit{
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgb(16,112,117,0.2);
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-.custom-submit{
-    border: none;
-    border-radius: 10px;
-    color: #FFFFFF;
-    padding: 10px;
-    background: linear-gradient(90deg, rgb(86, 17, 255, 1) 23%, rgb(255, 0, 183, 1) 100%);
-}
-
-.breadcrumbs{
-    background: rgb(255,255,255);
-    background: linear-gradient(100deg, rgb(255,255,255,1)0%, rgb(0,221,255,1)39%);
-    padding: 5px;
-    color: #000000;
+.header-line{
+    padding-top: 50px;
     display: flex;
-    gap: 10px;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.breadcrumbs div{
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid #FFFFFF;
-    box-shadow: none;
-    border-left: none;
-    border-bottom: none;
-    border-top: none;
+.header-line{
+
+    border: 4px solid white;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: white;
+    height: 56px;
+    width: 1124px;
+    padding-top: 16px;
+    box-shadow: 0px 0px 2px black;
 }
 
-.breadcrumbs div a{
+.nav-item{
+    color: black;
     text-decoration: none;
-    color: #000000;
-}
-.test {
-    color: yellow !important;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    margin-right: 25px;
 }
 
-.test {
-    color: red !important;
+.num{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    word-spacing: 2px;
+    margin: 0 10px;
+}
+
+.phone-holder{
+    display: flex;
+    align-items: center;
+}
+
+.mail-text{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.mail-holder{
+    display: flex;
+    align-items: center;
+}
+
+.header-title{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.oneder-title{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+.header-sub{
+    color: black;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.twoheader-title{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+.mobile-text{
 }
