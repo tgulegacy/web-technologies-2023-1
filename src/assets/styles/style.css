@@ -17,6 +17,9 @@ body{
     background-repeat: round;
     background-repeat: no-repeat;
     background-position:80% 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 .header-line{
     padding-top: 50px;
@@ -34,6 +37,8 @@ body{
     width: 1124px;
     padding-top: 16px;
     box-shadow: 0px 0px 2px black;
+    position: fixed;
+    top: 0;
 }
 
 .nav-item{
@@ -164,4 +169,8 @@ margin: 160px;
     color: #101828;
     font-family: "SF Pro Display", sans-serif;
     font-size:17px;
+}
+
+.footer{
+    margin-top: auto;
 }
