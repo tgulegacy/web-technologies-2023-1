@@ -2,6 +2,58 @@
 @import "./fonts.css";
 @import "./utils.css";
 
+
+body{
+    font-family: Crosterian;
+}
+
+
+p, h1 {
+    color: #1F3F68;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 44px;
+}
+h3 {
+    font-size: 36px;
+}
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+input, textarea {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+button {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+
 .test {
     color: yellow !important;
 }
@@ -9,3 +61,87 @@
 .test {
     color: red !important;
 }
+
+form {
+    background-image: url('../../../images/contacts.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-weight: bold;
+    font-style: italic;
+    }
+
+.gradient-button {
+    background-image: linear-gradient(to right, #0000FF, #8B00FF);
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+.breadcrumb-container {
+    list-style: none;
+    background-image: linear-gradient(to bottom, #c5c5c5, #46675a);
+    padding: 0;
+    margin: 0;
+    height: 30px;
+}
+
+.breadcrumb-container li {
+    display: inline-block;
+    margin: 0;
+    padding: 5px 8px 7px 2px;
+    color: black;
+    border-top-right-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+    border-width: 1px;
+    border-right-color: black;
+    border-right: solid;
+}
+
+.breadcrumb-container li a {
+    color: black;
+    text-decoration: none;
+}
+
+ul.breadcrumb-list li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/*.breadcrumb-list li {
+    border-right-color: black;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background-image: linear-gradient(to bottom, #ffffff, #46675a);
+    display: inline-block;
+    border-width: 5px;
+    border-right: solid;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0 5px;
+}
+
+/* Добавить цвет для всех ссылок внутри списка */
+/*ul.breadcrumb-list li a {
+    color: #030303;
+    text-decoration: none;
+}
+    background: rgb(52,123,125);
+    background: linear-gradient(0deg, rgba(52,123,125,1) 0%, rgba(255,254,255,1) 100%);
+
+    /* Отображение элементов списка бок о бок */
+/*ul.breadcrumb-list li {
+    display: inline;
+    font-size: 18px;
+}
+
+
+/* Добавить цвет на наведении курсора мыши */
+/*ul.breadcrumb-list li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+ */
