@@ -11,64 +11,40 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
+    <div class="header">
+        <span class="logo">
             <img src="./assets/img/logo.png" width="200" height="200" alt="Image Logo">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        Главная
-                    </a>
-                </li>
-                <li>
-                    <a href="./components/contacts.html">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-
-    <div class="wrapper">
-        <h1 class="h1">
-            This is first
-        </h1>
-        <p>
-            The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is available here.
-            All content is licensed under the Creative Commons Attribution Non Commercial Share Alike 3.0 license.
-            Print versions of the book are available on Amazon.com.
-        </p>
-        <h3 class="h3">
-            This is second
-        </h3>
-        <h4>
-            This is third
-        </h4>
-        <p>
-            The version found here has been updated with corrections and additions from hundreds of contributors.
-        </p>
-        <h3 class="h3">
-            This is fourth
-        </h3>
-        <p>
-            If you see an error or have a suggestion, patches and issues are welcome in its GitHub repository.
-        </p>
-        <hr>
-    </div>
-    <footer>
-        <h3 class="h3">
-            This is fifth
-        </h3>
-        <p>
-            Getting Started - About Version Control.
-        </p>
-        <hr>
+        </span>
         <ul>
-            <li>About us.</li>
             <li>
-                <a href="tel:89042347628">
-                    89042347628
+                <a href="index.html">
+                    Главная
                 </a>
+            </li>
+            <li>
+                <a href="./components/contacts.html">
+                    Контакты
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="./../src/assets/img/phone.png" alt="telephone logotip" width="50" height="50">
+            <li>
+                <a href="tel: 89667632001">
+                    89667632001
+                </a>
+            </li>
+            <li>
+                <a href="tel:89667632001">
+                    89667632001
+                </a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <img src="./../src/assets/img/mail.png" alt="mail logopit" width="50" height="50">
             </li>
             <li>
                 <a href="mailto:malchenko.03@mail.ru">
@@ -76,9 +52,413 @@
                 </a>
             </li>
         </ul>
-        <p>
-            All rights reserved
-        </p>
+    </div>
+    </header>
+
+    <div class="wrapper">
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome-main">
+                    <h1 class="h1">
+                        This is first
+                    </h1>
+                    <p>
+                        The entire Pro Git book, written by Scott Chacon and Ben Straub and published by Apress, is
+                        available here.
+                        All content is licensed under the Creative Commons Attribution Non Commercial Share Alike 3.0
+                        license.
+                        Print versions of the book are available on Amazon.com.
+                    </p>
+                </div>
+                <div class="content">
+                    <h3 class="h3">
+                        This is second
+                    </h3>
+                    <h4>
+                        This is third
+                    </h4>
+                    <p>
+                        The version found here has been updated with corrections and additions from hundreds of
+                        contributors.
+                    </p>
+                    <h3 class="h3">
+                        This is fourth
+                    </h3>
+                    <p>
+                        If you see an error or have a suggestion, patches and issues are welcome in its GitHub
+                        repository.
+                    </p>
+                    <form action="./../src/assets/img/phone.png" name="content" width="50" height="50">
+                        <div class="filed">
+                            <label for="telephone">
+                                phone
+                            </label>
+                            <div>
+                                <img src="./../src/assets/img/phone.png" alt="logo" width="50" height="50">
+                                <input id="telephone" type="telephone" name="telephone">
+                            </div>
+                        </div>
+                        <div class="filed">
+                            <label for="mail">
+                                email
+                            </label>
+                            <div>
+                                <img src="./../src/assets/img/mail.png" alt="logo" width="50" height="50">
+                                <input id="mail" type="mail" name="mail">
+                            </div>
+                        </div>
+                        <input type="button" value="Send">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="GameDev">
+            <div class="container">
+                <div class="description">
+                    <h1>GameDev</h1>
+                    <p>Engines</p>
+                    <h3>First</h3>
+                    <div class="list">
+                        Unity
+                    </div>
+                    <h3>Second</h3>
+                    <div class="list">
+                        Unreal Engine
+                    </div>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>
+                            There is most popular GameDev tools
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="Engines">
+            <div class="container">
+                <h2>Popular Game Engines</h2>
+                <div class="items">
+                    <div class="item">
+                        <img src="./../src/assets/img/unity.png" alt="logo item" width="50" height="50">
+                        <span>Unity</span>
+                    </div>
+                    <div class="item">
+                        <img src="./../src/assets/img/unreal.png" alt="logo item" width="50" height="50">
+                        <span>Unreal Engine</span>
+                    </div>
+                    <div class="item">
+                        <img src="./../src/assets/img/godot.png" alt="logo item" width="50" height="50">
+                        <span>Godot</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="Programming Languages">
+            <div class="container">
+                <h1>Programming Languages</h1>
+                <p>There are three main Programming Languages for GameDev</p>
+                <div class="projects-navbar">
+                    <span>C#</span>
+                    <span>C++</span>
+                    <span>Python</span>
+                </div>
+                <div class="content">
+                    <h1>Languages</h1>
+                    <p>List</p>
+                    <div class="list">
+                        <span>C# </span>
+                        <span>C++ </span>
+                        <span>Python </span>
+                    </div>
+                    <div class="logos">
+                        <div class="logo">
+                            <img src="./../src/assets/img/C.png" alt="Logo" height="70" width="70">
+                            <span>C# </span>
+                        </div>
+                        <div class="logo">
+                            <img src="./../src/assets/img/c++.png" alt="Logo" height="70" width="70">
+                            <span>C++ </span>
+                        </div>
+                        <div class="logo">
+                            <img src="./../src/assets/img/python.png" alt="Logo" height="70" width="70">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="IDEs">
+                        <div class="IDE">
+                            <span class="number">IDE</span>
+                            <span class="description">VS Code</span>
+                        </div>
+                        <div class="IDE">
+                            <span class="number">IDE</span>
+                            <span class="description">Visual Studio</span>
+                        </div>
+                    </div>
+                    <div class="logos">
+                        <div class="logo">
+                            <img src="./../src/assets/img/vs.png" alt="VS Code" width="70" height="70">
+                        </div>
+                        <div class="logo">
+                            <img src="./../src/assets/img/studio.png" alt="Visual Studio" width="70" height="70">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="Info">
+            <div class="container">
+                <h1>Info</h1>
+                <p>Us</p>
+                <div class="projects-navbar">
+                    <span>Phone</span>
+                    <span>Mail</span>
+                    <span>Tg</span>
+                </div>
+                <div class="content">
+                    <h1>Platforms</h1>
+                    <p>The</p>
+                    <div class="list">
+                        <span>first</span>
+                        <span>second</span>
+                        <span>third</span>
+                    </div>
+                    <div class="platforms">
+                        <div class="logo">
+                            <img src="./../src/assets/img/newg.png" alt="Logo logo" height="50" width="50">
+                            <span>Newgrounds</span>
+                        </div>
+                        <div class="logo">
+                            <img src="./../src/assets/img/itch.png" alt="Logo logo" height="50" width="50">
+                            <span>Itch.io</span>
+                        </div>
+                    </div>
+                    <div class="best_choice">
+                        <div class="progress">
+                            <span class="number">First</span>
+                            <span class="description">C#</span>
+                        </div>
+                        <div class="progress">
+                            <span class="number">Second</span>
+                            <span class="description">C++</span>
+                        </div>
+                    </div>
+                    <div class="logos">
+                        <div class="logo">
+                            <img src="./../src/assets/img/C.png" alt="C#" width="70" height="70">
+                        </div>
+                        <div class="logo">
+                            <img src="./../src/assets/img/c++.png" alt="C++" width="70" height="70">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="choice">
+                    <h2>
+                        First
+                    </h2>
+                    <p> Second </p>
+                </div>
+                <form action="" name="contact">
+                    <div class="field">
+                        <label for="tel">
+                            Number
+                        </label>
+                        <div>
+                            <img src="./../src/assets/img/phone.png" alt="logo country" width="50" height="50">
+                            <input id="tel" type="tel" name="tel">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="mail">
+                            Mail
+                        </label>
+                        <div>
+                            <img src="./../src/assets/img/mail.png" alt="logo country" width="50" height="50">
+                            <input id="mail" type="text" name="fio">
+                        </div>
+                    </div>
+                    <input type="button" value="Join" name="join">
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="development">
+            <div class="container">
+                <h2>
+                    Development
+                </h2>
+
+                <div class="devs">
+                    <div class="dev">
+                        <div class="title">
+                            <img src="./../src/assets/img/dev.png" alt="logo" class="logo" width="50" height="50">
+                            <span>First step</span>
+                        </div>
+                        <p>
+                            Idea
+                        </p>
+                    </div>
+                    <div class="dev">
+                        <div class="title">
+                            <img src="./../src/assets/img/dev.png" alt="logo" class="logo" width="50" height="50">
+                            <span>Second step</span>
+                        </div>
+                        <p>
+                            Realisation
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="about">
+            <div class="container">
+                <div class="content">
+                    <h2>
+                        Phone
+                    </h2>
+                    <p>
+                        +79042461532
+                    </p>
+                    <div class="items">
+                        <div class="item">
+                            <span>
+                                Members
+                            </span>
+                            <p>
+                                5 devs
+                            </p>
+                        </div>
+                        <div class="item">
+                            <span>
+                                Work
+                            </span>
+                            <p>
+                                5 years
+                            </p>
+                        </div>
+                    </div>
+                    <p>
+                        Our team
+                    </p>
+                </div>
+                <img src="./../src/assets/img/team.png" alt="Team" width="60" height="50">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="invite">
+            <div class="container">
+                <div>
+                    <h2>
+                        Join us!
+                    </h2>
+                    <form action="" name="contact-3">
+                        <div class="main">
+                            <div class="field">
+                                <label for="tel-3">
+                                    phone number
+                                </label>
+                                <div>
+                                    <img src="./../src/assets/img/phone.png" alt="logo" width="50" height="50">
+                                    <input id="tel-3" type="tel" name="tel-3">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="fio-3">
+                                    Ur name
+                                </label>
+                                <div>
+                                    <img src="./../src/assets/img/team.png" alt="logo" width="50" height="50">
+                                    <input id="fio-3" type="text" name="fio-3">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="email">
+                                    mail
+                                </label>
+                                <div>
+                                    <img src="./../src/assets/img/mail.png" alt="logo" width="50" height="50">
+                                    <input id="email" type="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" value="Send ur contacts">
+                    </form>
+                </div>
+                <img src="./../src/assets/img/dev.png" alt="book" width="50" height="50">
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="help">
+            <h2>
+                HELP
+            </h2>
+            <div class="items">
+                <div class="item">
+                    <div class="main">
+                        <h3>
+                            Select
+                        </h3>
+                        <img src="./../src/assets/img/help.png" alt="open" width="50" height="50">
+                        <img src="./../src/assets/img/idea.png" alt="close" width="50" height="50">
+                    </div>
+                    <div class="content">
+                        <p>
+                            Help
+                        </p>
+                        <p>
+                            Idea
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <h3 class="h3">
+            Pages
+        </h3>
+        <div class="items">
+            <div class="item">
+                <div class="title">
+                    <img src="./../src/assets/img/phone.png" alt="logo" width="50" height="50">
+                    <span>number</span>
+                </div>
+                <a href="tel:89667632001">89667632001</a>
+            </div>
+        </div>
+        <div class="end">
+            <img src="./../src/assets/img/idea.png" alt="end" width="50" height="50">
+            <span>
+                All rights reserved
+            </span>
+        </div>
     </footer>
     <script src="index.js"></script>
 </body>
