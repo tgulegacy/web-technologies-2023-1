@@ -2,93 +2,219 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+body{
+    margin: 0;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 15px;
+}
+.container {
+    margin: 0 166px;
 }
 
-.test {
-    color: red !important;
+.header {
+    background-image: url("../icons/welcome.png");
+    height: 100vh;
+    background-repeat: round;
+    background-repeat: no-repeat;
+    background-position:80% 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
-
-p{
-    font-size: 16px;
-    line-height: 26px;
-    color: #1F3F68
+.header-line{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-
-h1.h1 {
-    font-size: 64px;
-    color: #1F3F68;
+.header-down{
+    padding-top: 60px;
 }
-
-h2.contacts-h2 {
-    font-weight: 500;
-    font-size: 44px;
-    text-align: center;
-}
-
-h3.h3 {
-    font-size: 36px;
-    text-align: center;
-}
-
-h4.h4 {
-    font-size: 20px;
-    line-height: 30px;
-    color: #1F3F68;
-}
-
-input.input, textarea.input {
-    border: 1px solid #356EAD;
+.header-line{
+    border: 4px solid white;
     box-sizing: border-box;
-    border-radius: 10px;
-    opacity: 0.4
+    border-radius: 12px;
+    background: white;
+    height: 56px;
+    width: 1124px;
+    padding-top: 16px;
+    box-shadow: 0px 0px 2px black;
+    position: fixed;
+    top: 0;
 }
 
-.contacts-form {
-    background: url("./../img/contacts.png");
-}
-
-.submit {
-    background: #5A98D0;
-    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-    border-radius: 10px;
+.nav-item{
+    color: black;
+    text-decoration: none;
     font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.15px;
+    margin-right: 25px;
+}
+
+.num{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    word-spacing: 2px;
+    margin: 0 10px;
+}
+
+.phone-holder{
+    display: flex;
+    align-items: center;
+}
+
+.mail-text{
+    color: cornflowerblue;
+    text-decoration: none;
+}
+.mail-holder{
+    display: flex;
+    align-items: center;
+}
+
+.header-title{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 100px;
+    word-spacing: 3px;
+.color-text{
+    color: cornflowerblue;
+}
+}
+.oneder-title{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.twoheader-title{
+    color: black;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.header-sub{
+    color: black;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    word-spacing: 3px;
+}
+
+.contacts {
+margin: 160px;
+    margin-top: -400px;
+}
+
+.contacts-holder{
+    border: 4px solid white;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: white;
+    height: 140px;
+    width: 550px;
+    padding-top: 2px;
+    box-shadow: 0px 0px 2px black;
+}
+
+.contacts-title{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #101828;
+}
+
+.phone-number{
+    color: #667085;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 13px;
+}
+
+.counrty-phonenumber{
+    display: flex;
+    justify-content: left;
+}
+
+.fullname{
+    color: #667085;
+    font-family: "SF Pro Display", sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content:space-around;
+    margin-top: -35px;
+}
+.name{
+    margin-left: -220px;
+}
+.submit{
+    background: #2D66EE;
+    border-radius: 8px;
+    font-weight: 132;
     font-size: 16px;
     line-height: 26px;
-    text-align: center;
+    display: flex;
+    text-align: justify;
     color: #FFFFFF;
     text-transform: uppercase;
 }
-
-.custom-submit {
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 10px;
-    background: linear-gradient(90deg, rgba(86, 17, 255, 1) 23%, rgba(255, 0, 183, 1) 100%);
+.text-Fullname{
+    margin-left: 150px;
+    margin-top: 20px;
+    color: #101828;
+    font-family: "SF Pro Display", sans-serif;
+    font-size:17px;
 }
 
-.breadcrumbs {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 221, 255, 1) 39%);
-    padding: 5px;
-    color: black;
+.footer_block {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #101828;
+    color: white;
+    border-radius: 20px;
+    margin-top: auto;
 }
 
-.breadcrumbs div {
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid white;
-    box-shadow: 2px 0 0 0 black;
-    border-left: none;
-    border-bottom: none;
-    border-top: none;
+.footer_block h3 {
+    text-align: center;
+    font-size: 40px;
 }
 
-.breadcrumbs div a {
-    text-decoration: none;
-    color: black;
+.footer_block p {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.footer_list_block {
+    margin-top: -25px;
+}
+
+.footer_list_block ul li {
+    display: inline-block;
+    margin-right: 150px;
+}
+
+.footer_list_el_block p {
+    font-size: 16px;
+}
+
+.footer_list_el_block span {
+    color: #98A2B3;
+    font-size: 14px;
+}
+
+.footer_list_el_block img {
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    height: 25px;
 }
