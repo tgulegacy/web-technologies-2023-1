@@ -1,0 +1,54 @@
+/* iPads (portrait) ----------- */
+@media screen and (min-width: 650px) and (max-width: 800px) {
+  .header_addaptive{
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 25px;
+    box-shadow: 2px 2px 5px gray;
+    position: fixed;
+    z-index: 9999;
+  }
+
+  .header_addaptive .logo_container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+  }
+
+  .header_addaptive .logo {
+    font-size: 24px;
+  }
+
+  .header_addaptive .email {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .header_menu {
+    width:fit-content;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .header {
+    display:none !important;
+  }
+
+  .footer {
+    margin:0 !important;
+  }
+
+  .footer .infoContainer {
+    display: grid !important;
+    grid-template-rows: 2fr 2fr !important;
+    grid-template-columns: 2fr 2fr !important;
+  }
+}

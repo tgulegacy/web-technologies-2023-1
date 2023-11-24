@@ -1,18 +1,129 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/assets/styles/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная - IT-Website</title>
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/phone_style.css">
+  <link rel="stylesheet" href="assets/styles/tablet_style.css">
 </head>
 <body>
-<div class="test" style="color: blue">
-    test
+
+<div class="header_addaptive">
+  <div class="header_menu">
+    <div class="header_menu_line"><img src="./assets/icons/line.svg" alt="test"/></div>
+    <div class="header_menu_line"><img src="./assets/icons/line.svg" alt="test"/></div>
+    <div class="header_menu_line"><img src="./assets/icons/line.svg" alt="test"/></div>
+  </div>
+  <div class="logo_container">
+    <span class="logo dodgerblue">IT Website</span>
+    <span class="email">
+      <a>itcompany@mail.com</a>
+    </span>
+  </div>
 </div>
 
-<script src="index.js"></script>
+<div class="header">
+  <span class="logo dodgerblue">IT Website</span>
+  <ul>
+    <li>Services</li>
+    <li>Media</li>
+    <li>Cases</li>
+    <li>FAQ</li>
+    <li>Contacts</li>
+  </ul>
+  <span class="contacts">
+        <a>+7 (111) 111 11 11</a>
+        <a>+7 (111) 111 11 11</a>
+    </span>
+  <span class="email">
+        <a>itcompany@mail.com</a>
+  </span>
+
+</div>
+
+<div class="content">
+  <div class="container mt-3">
+    <p class="title">Development of <span class="dodgerblue">mobile applications</span> and <span class="dodgerblue">web services</span> of any complexity</p>
+    <p>We create mobile application for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
+
+    <div class="form mt-3">
+      <p><b>Leave your contacts and we will call you back within 30 minutes</b></p>
+      <div class="input_wrapper">
+        <div>
+          <p class="gray">
+            Phone number
+          </p>
+          <img src="./assets/icons/Kz-flag.svg" height="20" width="20" alt=""/>
+          <input type="text" class="input_form" value="+7 (702) 517-11-98"/>
+        </div>
+        <div>
+          <p class="gray">
+            Full name
+          </p>
+          <input type="text" class="input_form" value="Агадиль">
+        </div>
+        <div class="btn">Get consultation</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-3 background_white">
+    <div class="block_title">
+      <h2 class="mt-3">Full development cycle!</h2>
+      <h4 class="mt-3">We use proven technologies</h4>
+    </div>
+    <div class="mt-3 technologies_container">
+      <div class="technologies">
+        <div>
+          <h3 class="mt-3">Web</h3>
+          <p class="mt-3">PHP / Javascript / Node.JS / Web Socket / Socket.io / Vue.js / Nuxt / MySQL / Laravel / GO lang / Django / Python</p>
+        </div>
+        <div>
+          <h3 class="mt-3">Mobile</h3>
+          <p class="mt-3">Swift / Kotlin / Alamofire / Firebase / CoreData / Room / Realm / Coroutine / RxJava / RxSwift / Unit Test / Navigation</p>
+        </div>
+      </div>
+      <div>
+        <ul>
+          <li>iOS development</li>
+          <li>Android development</li>
+          <li>Web development</li>
+          <li>UI/UX design</li>
+          <li>Testing</li>
+          <li>Launch</li>
+          <li>IT Consulting</li>
+        </ul>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+<div class="footer">
+  <h2 align="center">IT WEBSITE</h2>
+  <div class="infoContainer">
+    <div class="infoElement">
+      <p class="caption-contact">Contact nums</p>
+      <p class="description">+7 (778) 395 90 26</p>
+    </div>
+    <div class="infoElement">
+      <p class="caption-email">Post</p>
+      <p class="description">mail@mail.com</p>
+    </div>
+    <div class="infoElement">
+      <p class="caption-address">Address</p>
+      <p class="description">City city, steet st. 90</p>
+    </div>
+    <div class="infoElement">
+      <p class="caption-document">Leave a request</p>
+      <p class="description">Leave a request</p>
+    </div>
+  </div>
+  <p class="footer-label">We work throughout world</p>
+</div>
 </body>
 </html>

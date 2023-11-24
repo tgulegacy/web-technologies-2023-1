@@ -2,10 +2,223 @@
 @import "./fonts.css";
 @import "./utils.css";
 
-.test {
-    color: yellow !important;
+*{
+    margin:0;
+    padding:0;
 }
 
-.test {
-    color: red !important;
+.background_white {
+    background-color: white;
+}
+
+body {
+    background: rgba(242, 244, 247, 1);
+}
+
+.dodgerblue {
+    color:dodgerblue;
+}
+
+.gray {
+    color:gray;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 0 10px;
+    background: blue;
+    color:white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mt-3 {
+    margin-top: 30px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_addaptive{
+    display:none;
+}
+
+.header{
+    font-weight: bold;
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 25px;
+    box-shadow: 2px 2px 5px gray;
+    position: fixed;
+    z-index: 9999;
+}
+
+.header .logo{
+    font-size: 24px;
+    display: inline-block;
+}
+
+.header ul{
+    display: inline-block;
+}
+
+.header ul li{
+    display: inline;
+    margin-right: 5px;
+    cursor:pointer;
+}
+
+.header .contacts, .email{
+    display: inline-block;
+    float: right;
+}
+
+.header .contacts a, .email a{
+    text-decoration: none;
+    margin-right: 10px;
+    color:dodgerblue;
+    cursor:pointer;
+}
+
+.contacts:before {
+    content: url('../icons/bluePhone.svg');
+    margin-right: 5px;
+}
+
+.email::before {
+    content: url('../icons/blueEmail.svg');
+    margin-right: 5px;
+}
+
+.content {
+    padding-top: 50px;
+    width: 80%;
+    margin:0 auto;
+    padding-bottom: 50px;
+}
+
+.content .container {
+    position: relative;
+    width: 65%;
+}
+
+.content .title {
+    font-size:30px;
+    font-weight: bold;
+}
+
+.content .form {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    padding:10px;
+}
+
+.content .form .input_wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.content .form .input_wrapper .input_form {
+    border: 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+}
+
+.content .technologies_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content .block_title h2 {
+    font-size: 30px;
+}
+
+.content .block_title h4 {
+    font-size:20px;
+}
+
+.content .technologies_container .technologies {
+    position: relative;
+    width: 50%;
+}
+
+.content .technologies_container ul li {
+    list-style: none;
+    margin-top: 24px;
+    font-size:30px;
+    width: fit-content;
+}
+
+.content .technologies_container ul li::after {
+    content: " >";
+}
+
+.content .technologies_container ul li:hover {
+    border-bottom: 3px solid rgb(33, 105, 231);
+}
+
+.footer {
+    background: rgba(16, 24, 40, 1);
+    border-radius: 10px;
+    color:white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.caption-email, .caption-contact, .caption-address, .caption-document{
+    color: rgba(152, 162, 179, 1);
+}
+
+.caption-contact:before{
+    content: url('../icons/phone.svg');
+    margin-right: 5px;
+}
+
+.caption-email:before{
+    content: url('../icons/email.svg');
+    margin-right: 5px;
+}
+
+.caption-address:before{
+    content: url('../icons/address.svg');
+    margin-right: 5px;
+}
+
+.caption-document:before{
+    content: url('../icons/document.svg');
+    margin-right: 5px;
+}
+
+.footer .infoContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .infoContainer .infoElement{
+    padding:0 50px;
+    display: inline-block;
+}
+
+.footer .footer-label{
+    text-align:center;
+}
+
+.footer .footer-label:before{
+    content: url('../icons/footerSmoke.svg');
+    margin-right: 5px;
 }
