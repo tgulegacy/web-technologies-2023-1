@@ -1,0 +1,319 @@
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+  body {
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  header {
+    background-color: white;
+    width: 100vw;
+    height: 90px;
+    margin-left: 0px;
+    margin-top: 0;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    left: 0;
+  }
+  header ul {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  header ul li {
+    display: flex;
+    align-items: center;
+  }
+  header ul li:not(:last-child) {
+    display: none;
+  }
+  header ul a {
+    color: #2D66EE;
+    text-decoration: none;
+  }
+  header ul img {
+    margin-right: 4px;
+    z-index: 2;
+  }
+  header span {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D66EE;
+  }
+  header div {
+    text-align: center;
+  }
+  header div:nth-child(3) {
+    display: none;
+    visibility: hidden;
+  }
+  header div:first-child {
+    background-image: url("img/icons/adidas.svg");
+    width: 59px;
+    height: 40px;
+    display: block;
+    justify-self: start;
+    margin-left: 30px;
+  }
+  .about-faq {
+    width: 100%;
+    height: 2222px;
+  }
+  .about-company {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 90vw;
+    height: 220px;
+    margin-left: 0;
+    padding: 0 0 0 32px;
+  }
+  .company-description {
+    font-family: Inter;
+  }
+  .company-description h1 {
+    color: #101828;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+    width: 383px;
+  }
+  .company-description span {
+    color: #306FF5;
+    font-family: Futura;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+  }
+  .company-description p {
+    color: #101828;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.2399999946px;
+    text-align: left;
+    width: 383px;
+  }
+  .contact-info {
+    position: relative;
+    top: 10px;
+    width: 382px;
+    height: 356px;
+    background-color: white;
+    border-radius: 12px;
+  }
+  .contact-info h2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+    width: 300px;
+    color: #101828;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 80px);
+    position: relative;
+    left: 20px;
+    top: 40px;
+  }
+  .contact-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .contact-form label {
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.0780000016px;
+    text-align: left;
+  }
+  .contact-form input {
+    border-style: none;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.0780000016px;
+    text-align: left;
+  }
+  .contact-form input[type=tel], .contact-form input[type=text] {
+    margin-top: 10px;
+    border-bottom: 1px solid #D0D5DD;
+  }
+  .contact-form input[type=submit] {
+    background-color: #2D66EE;
+    color: white;
+    font-size: 12px;
+    width: 132px;
+    height: 58px;
+    border-radius: 8px;
+    padding: 11px 24px;
+  }
+  .comp-mobile-image {
+    background-image: url("img/background/group-2.png");
+    position: absolute;
+    z-index: -1;
+    width: 398px;
+    height: 912px;
+    top: 0;
+    right: 0;
+  }
+  .about-dev {
+    position: absolute;
+    top: 762px;
+    width: 100vw;
+    height: 531px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .dev-description {
+    align-self: start;
+    justify-self: start;
+    position: relative;
+    left: 0;
+    margin: 30px 0 0 33px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 4;
+    gap: 33px;
+  }
+  .dev-description div {
+    width: 280px;
+  }
+  .dev-description div h2, .dev-description div h3, .dev-description div span {
+    margin: 0;
+  }
+  .dev-description div h2 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+    width: 350px;
+  }
+  .dev-description div h3 {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+  }
+  .dev-description div span {
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.2399999946px;
+    text-align: left;
+  }
+  .dev-description div p {
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4079999924px;
+    text-align: left;
+  }
+  .dev-resources {
+    align-self: end;
+    justify-self: center;
+    position: relative;
+    padding-bottom: 40px;
+    left: 0px;
+  }
+  .dev-resources div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+  }
+  .dev-resources div a {
+    font-family: SF Pro Display;
+    text-decoration: none;
+    color: #1D2939;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+  }
+  .dev-resources div a:hover {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #2d66ee;
+  }
+  footer {
+    background-color: #101828;
+    width: 100%;
+    height: 241px;
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0 0 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > div {
+    margin: 5px 0 5px 0;
+  }
+  footer span {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  footer p {
+    color: white;
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+  }
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .contact-column li {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+  .contact-column span {
+    color: #98A2B3;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=style-768.css.map */

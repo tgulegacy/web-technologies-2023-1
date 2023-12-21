@@ -1,220 +1,944 @@
-@import "./global.css";
-@import "./fonts.css";
-@import "./utils.css";
-
-body{
+@import "styles/fonts/fonts.css";
+@media screen and (max-width: 767px) and (min-width: 300px) {
+  body {
+    background-color: #f2f4f7;
     margin: 0;
-    font-family: 'SF Pro Display', sans-serif;
+    padding: 0;
+  }
+  header {
+    background-color: white;
+    width: 100vw;
+    height: 90px;
+    margin-left: 0px;
+    margin-top: 15px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    position: fixed;
+    z-index: 3;
+  }
+  header ul {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  header ul li {
+    display: flex;
+    align-items: center;
+  }
+  header ul li:not(:last-child) {
+    display: none;
+  }
+  header ul a {
+    color: #2D66EE;
+    text-decoration: none;
+  }
+  header ul img {
+    margin-right: 4px;
+    z-index: 2;
+  }
+  header span {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D66EE;
+  }
+  header div {
+    text-align: center;
+  }
+  header div:nth-child(3) {
+    display: none;
+    visibility: hidden;
+  }
+  header div:last-child {
+    display: none;
+  }
+  header div:first-child {
+    background-image: url("../img/icons/adidas-mini.svg");
+    width: 40px;
+    height: 20px;
+    display: block;
+    justify-self: start;
+    margin-left: 30px;
+  }
+  .about-faq {
+    width: 100%;
+    height: 2622px;
+  }
+  .about-company {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    height: 220px;
+    margin-left: 0;
+  }
+  .company-description {
+    font-family: Inter;
+    width: 90vw;
+    margin: 0 auto 0 auto;
+  }
+  .company-description h1 {
+    color: #101828;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+    width: 383px;
+  }
+  .company-description span {
+    color: #306FF5;
+    font-family: Futura;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+  }
+  .company-description p {
+    color: #101828;
     font-size: 15px;
-}
-.container {
-    margin: 0 166px;
-}
-
-.header {
-    background-image: url("../icons/welcome.png");
-    height: 100vh;
-    background-repeat: round;
-    background-repeat: no-repeat;
-    background-position:80% 90%;
-    overflow: hidden;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.2399999946px;
+    text-align: left;
+    width: 383px;
+  }
+  .contact-info {
+    position: relative;
+    top: 558px;
+    width: 85vw;
+    height: 356px;
+    margin: 0 auto 0 auto;
+    padding: 32px 0 33px 33px;
+    background-color: white;
+    border-radius: 12px;
+    z-index: 1;
+  }
+  .contact-info h2 {
+    margin-top: 0;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+    width: 300px;
+    color: #101828;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 80px);
+    gap: 30px;
+  }
+  .contact-form div {
     display: flex;
     flex-direction: column;
-}
-.header-line{
-    padding-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.header-down{
-    padding-top: 60px;
-}
-.header-line{
-    border: 4px solid white;
-    box-sizing: border-box;
-    border-radius: 12px;
-    background: white;
-    height: 56px;
-    width: 1124px;
-    padding-top: 16px;
-    box-shadow: 0px 0px 2px black;
-    position: fixed;
-    top: 0;
-}
-
-.nav-item{
-    color: black;
-    text-decoration: none;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact-form label {
+    font-family: SF Pro Text;
+    font-size: 13px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: -0.15px;
-    margin-right: 25px;
-}
-
-.num{
-    color: cornflowerblue;
-    text-decoration: none;
+    line-height: 16px;
+    letter-spacing: -0.0780000016px;
+    text-align: left;
+  }
+  .contact-form input {
+    border-style: none;
+    font-family: SF Pro Text;
+    font-size: 16px;
     font-weight: 500;
-    font-size: 14px;
-    word-spacing: 2px;
-    margin: 0 10px;
-}
-
-.phone-holder{
-    display: flex;
-    align-items: center;
-}
-
-.mail-text{
-    color: cornflowerblue;
-    text-decoration: none;
-}
-.mail-holder{
-    display: flex;
-    align-items: center;
-}
-
-.header-title{
-    color: black;
-    font-family: 'Inter', sans-serif;
+    line-height: 16px;
+    letter-spacing: -0.0780000016px;
+    text-align: left;
+  }
+  .contact-form input[type=tel], .contact-form input[type=text] {
+    margin-top: 10px;
+    border-bottom: 1px solid #D0D5DD;
+  }
+  .contact-form input[type=submit] {
+    background-color: #2D66EE;
+    color: white;
+    font-size: 12px;
+    width: 132px;
+    height: 58px;
+    border-radius: 8px;
+    padding: 11px 24px;
+  }
+  .comp-mobile-image {
+    background-image: url("../img/background/group-3.png");
+    position: absolute;
+    z-index: -1;
+    width: 820px;
+    height: 1780px;
+    transform: scale(0.5);
+    top: -100px;
+    right: -200px;
+  }
+  .about-dev {
+    position: absolute;
+    top: 1361px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .dev-description {
+    align-self: start;
+    justify-self: start;
+    position: relative;
+    left: 0;
+    margin: 30px 0 0 33px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 4;
+    gap: 33px;
+  }
+  .dev-description div {
+    width: 280px;
+  }
+  .dev-description div h2, .dev-description div h3, .dev-description div span {
+    margin: 0;
+  }
+  .dev-description div h2 {
+    font-family: Inter;
     font-size: 28px;
     font-weight: 700;
-    margin-top: 100px;
-    word-spacing: 3px;
-.color-text{
-    color: cornflowerblue;
-}
-}
-.oneder-title{
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.twoheader-title{
-    color: black;
-    font-family: 'Inter', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-}
-
-.header-sub{
-    color: black;
-    font-family: "SF Pro Display", sans-serif;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+    width: 350px;
+  }
+  .dev-description div h3 {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+  }
+  .dev-description div span {
+    font-family: SF Pro Text;
     font-size: 15px;
     font-weight: 500;
-    word-spacing: 3px;
-}
-
-.contacts {
-margin: 160px;
-    margin-top: -400px;
-}
-
-.contacts-holder{
-    border: 4px solid white;
-    box-sizing: border-box;
-    border-radius: 12px;
-    background: white;
-    height: 140px;
-    width: 550px;
-    padding-top: 2px;
-    box-shadow: 0px 0px 2px black;
-}
-
-.contacts-title{
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.2399999946px;
+    text-align: left;
+  }
+  .dev-description div p {
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4079999924px;
+    text-align: left;
+  }
+  .dev-resources {
+    align-self: end;
+    justify-self: start;
+    position: relative;
+    margin: 0 0 0 33px;
+    padding-bottom: 40px;
+    left: 0px;
+  }
+  .dev-resources div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+  }
+  .dev-resources div a {
+    font-family: SF Pro Display;
+    text-decoration: none;
+    color: #1D2939;
     font-size: 20px;
-    color: #101828;
-}
-
-.phone-number{
-    color: #667085;
-    font-family: "SF Pro Display", sans-serif;
-    font-size: 13px;
-}
-
-.counrty-phonenumber{
-    display: flex;
-    justify-content: left;
-}
-
-.fullname{
-    color: #667085;
-    font-family: "SF Pro Display", sans-serif;
-    font-size: 13px;
-    display: flex;
-    justify-content:space-around;
-    margin-top: -35px;
-}
-.name{
-    margin-left: -220px;
-}
-.submit{
-    background: #2D66EE;
-    border-radius: 8px;
-    font-weight: 132;
-    font-size: 16px;
-    line-height: 26px;
-    display: flex;
-    text-align: justify;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-.text-Fullname{
-    margin-left: 150px;
-    margin-top: 20px;
-    color: #101828;
-    font-family: "SF Pro Display", sans-serif;
-    font-size:17px;
-}
-
-.footer_block {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+  }
+  .dev-resources div a:hover {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #2d66ee;
+  }
+  footer {
+    background-color: #101828;
+    width: 100vw;
+    height: 241px;
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0 0 0;
+    border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #101828;
+  }
+  footer > div {
+    margin: 5px 0 5px 0;
+  }
+  footer span {
     color: white;
-    border-radius: 20px;
-    margin-top: auto;
-}
-
-.footer_block h3 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.footer_block p {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  footer p {
+    color: white;
+    font-family: SF Pro Text;
     font-size: 13px;
-    margin-bottom: 30px;
-}
-
-.footer_list_block {
-    margin-top: -25px;
-}
-
-.footer_list_block ul li {
-    display: inline-block;
-    margin-right: 150px;
-}
-
-.footer_list_el_block p {
-    font-size: 16px;
-}
-
-.footer_list_el_block span {
+    font-weight: 400;
+    display: flex;
+  }
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    align-self: start;
+    justify-self: start;
+  }
+  .contact-column li {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+  .contact-column span {
     color: #98A2B3;
     font-size: 14px;
+    font-weight: 500;
+  }
 }
-
-.footer_list_el_block img {
-    vertical-align: middle;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    height: 25px;
+@media screen and (max-width: 1439px) and (min-width: 768px) {
+  body {
+    background-color: #f2f4f7;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  header {
+    background-color: white;
+    width: 100vw;
+    height: 90px;
+    margin-left: 0px;
+    margin-top: 0;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    left: 0;
+  }
+  header ul {
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  header ul li {
+    display: flex;
+    align-items: center;
+  }
+  header ul li:not(:last-child) {
+    display: none;
+  }
+  header ul a {
+    color: #2D66EE;
+    text-decoration: none;
+  }
+  header ul img {
+    margin-right: 4px;
+    z-index: 2;
+  }
+  header span {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D66EE;
+  }
+  header div {
+    text-align: center;
+  }
+  header div:nth-child(3) {
+    display: none;
+    visibility: hidden;
+  }
+  header div:first-child {
+    background-image: url("../img/icons/adidas.svg");
+    width: 59px;
+    height: 40px;
+    display: block;
+    justify-self: start;
+    margin-left: 30px;
+  }
+  .about-faq {
+    width: 100%;
+    height: 2222px;
+  }
+  .about-company {
+    position: relative;
+    top: 120px;
+    left: 0;
+    width: 90vw;
+    height: 220px;
+    margin-left: 0;
+    padding: 0 0 0 32px;
+  }
+  .company-description {
+    font-family: Inter;
+  }
+  .company-description h1 {
+    color: #101828;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+    width: 383px;
+  }
+  .company-description span {
+    color: #306FF5;
+    font-family: Futura;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+  }
+  .company-description p {
+    color: #101828;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.2399999946px;
+    text-align: left;
+    width: 383px;
+  }
+  .contact-info {
+    position: relative;
+    top: 10px;
+    width: 382px;
+    height: 356px;
+    background-color: white;
+    border-radius: 12px;
+  }
+  .contact-info h2 {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+    width: 300px;
+    color: #101828;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 80px);
+    position: relative;
+    left: 20px;
+    top: 40px;
+  }
+  .contact-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .contact-form label {
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.0780000016px;
+    text-align: left;
+  }
+  .contact-form input {
+    border-style: none;
+    font-family: SF Pro Text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.0780000016px;
+    text-align: left;
+  }
+  .contact-form input[type=tel], .contact-form input[type=text] {
+    margin-top: 10px;
+    border-bottom: 1px solid #D0D5DD;
+  }
+  .contact-form input[type=submit] {
+    background-color: #2D66EE;
+    color: white;
+    font-size: 12px;
+    width: 132px;
+    height: 58px;
+    border-radius: 8px;
+    padding: 11px 24px;
+  }
+  .comp-mobile-image {
+    background-image: url("../img/background/group-2.png");
+    position: absolute;
+    z-index: -1;
+    width: 398px;
+    height: 912px;
+    top: 0;
+    right: 0;
+  }
+  .about-dev {
+    position: absolute;
+    top: 762px;
+    width: 100vw;
+    height: 531px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .dev-description {
+    align-self: start;
+    justify-self: start;
+    position: relative;
+    left: 0;
+    margin: 30px 0 0 33px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 4;
+    gap: 33px;
+  }
+  .dev-description div {
+    width: 280px;
+  }
+  .dev-description div h2, .dev-description div h3, .dev-description div span {
+    margin: 0;
+  }
+  .dev-description div h2 {
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+    width: 350px;
+  }
+  .dev-description div h3 {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+  }
+  .dev-description div span {
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.2399999946px;
+    text-align: left;
+  }
+  .dev-description div p {
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4079999924px;
+    text-align: left;
+  }
+  .dev-resources {
+    align-self: end;
+    justify-self: center;
+    position: relative;
+    padding-bottom: 40px;
+    left: 0px;
+  }
+  .dev-resources div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+  }
+  .dev-resources div a {
+    font-family: SF Pro Display;
+    text-decoration: none;
+    color: #1D2939;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+  }
+  .dev-resources div a:hover {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #2d66ee;
+  }
+  footer {
+    background-color: #101828;
+    width: 100%;
+    height: 241px;
+    margin-left: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 0 0 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > div {
+    margin: 5px 0 5px 0;
+  }
+  footer span {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  footer p {
+    color: white;
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+  }
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .contact-column li {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+  .contact-column span {
+    color: #98A2B3;
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
+@media screen and (min-width: 1440px) {
+  header {
+    background-color: white;
+    width: 1114px;
+    height: 56px;
+    margin-top: 24px;
+    margin-left: 108px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px 0px 24px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  header div:first-child {
+    display: none;
+  }
+  header ol, header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  header li {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  header ol a {
+    color: black;
+    text-decoration: none;
+  }
+  header ul li {
+    color: #2D66EE;
+    display: flex;
+    align-items: center;
+  }
+  header ul a {
+    text-decoration: none;
+  }
+  header ul img {
+    margin-right: 4px;
+  }
+  header span {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D66EE;
+  }
+  body {
+    background-color: #F2F4F7;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .about-faq {
+    width: 100%;
+    height: 2222px;
+  }
+  .about-company {
+    position: relative;
+    top: 160px;
+    left: 108px;
+    width: 600px;
+    height: 220px;
+  }
+  .company-description {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .company-description h1 {
+    color: #101828;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+    width: 550px;
+  }
+  .company-description span {
+    color: #306FF5;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+  }
+  .company-description p {
+    color: #101828;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.2399999946px;
+    text-align: left;
+    width: 550px;
+  }
+  .contact-info {
+    position: relative;
+    top: 30px;
+    width: 676px;
+    height: 186px;
+    background-color: white;
+    border-radius: 12px;
+  }
+  .contact-info h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+    width: 500px;
+    color: #101828;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+  .contact-form {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: auto;
+    position: relative;
+    left: 20px;
+    top: 40px;
+  }
+  .contact-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .contact-form label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.0780000016px;
+    text-align: left;
+  }
+  .contact-form input {
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.0780000016px;
+    text-align: left;
+  }
+  .contact-form input[type=tel], .contact-form input[type=text] {
+    margin-top: 10px;
+    border-bottom: 1px solid #D0D5DD;
+  }
+  .contact-form input[type=submit] {
+    background-color: #2D66EE;
+    color: white;
+    font-size: 12px;
+    width: 132px;
+    height: 58px;
+    border-radius: 8px;
+    padding: 11px 24px;
+  }
+  .comp-mobile-image {
+    background-image: url("../img/background/group.png");
+    position: absolute;
+    z-index: -1;
+    width: 812px;
+    height: 900px;
+    top: 0;
+    right: 0;
+  }
+  .about-dev {
+    position: absolute;
+    top: 900px;
+    width: 100vw;
+    height: 492px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .dev-description {
+    align-self: center;
+    margin-left: 100px;
+  }
+  .dev-description h2 {
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0.3264510036px;
+    text-align: left;
+  }
+  .dev-description div {
+    width: 500px;
+  }
+  .dev-description div h3 {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+  }
+  .dev-description div span {
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.2399999946px;
+    text-align: left;
+  }
+  .dev-description div p {
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.4079999924px;
+    text-align: left;
+  }
+  .dev-resources {
+    align-self: center;
+    margin-left: 100px;
+  }
+  .dev-resources div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0;
+  }
+  .dev-resources div a {
+    font-family: SF Pro Display;
+    text-decoration: none;
+    color: #1D2939;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3799999952px;
+    text-align: left;
+  }
+  .dev-resources div a:hover {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid #2d66ee;
+  }
+  footer {
+    background-color: #101828;
+    width: 85vw;
+    height: 222px;
+    margin: 0 auto 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 24px 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > div {
+    margin: 25px 0px 20px 0px;
+  }
+  footer span {
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+  footer p {
+    color: white;
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+  }
+  .contacts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+  }
+  .contact-column {
+    align-self: center;
+    justify-self: center;
+  }
+  .contact-column ul {
+    padding: 0;
+  }
+  .contact-column li {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+  .contact-column span {
+    color: #98A2B3;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}/*# sourceMappingURL=style.css.map */
